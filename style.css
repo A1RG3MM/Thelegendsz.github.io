@@ -90,7 +90,7 @@ footer {
   margin: 10px;
 }
 
-/* this is css for add to cart button */
+
 .card > .button {
   border: 1px solid #4a85e8;
   color: #FFFFFF;
@@ -136,13 +136,13 @@ footer {
     bottom: -30px;
     background: #467CD7;
     border: 1px solid #467CD7;
-    width: 75%
+    width: 40%
   }
   30% {
     bottom: -20px;
     background: #395FA1;
     border: 1px solid #395FA1;
-    width: 100%;
+    width: 50%;
   }
 }
 /* Write CSS which will apply the animation on button hovering */
