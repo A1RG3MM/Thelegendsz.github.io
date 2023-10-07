@@ -16,4 +16,14 @@ searchInput.addEventListener("input", function () {
   
   gameList.style.removeProperty("display");
   gameList.style.removeProperty("flex-wrap");
+  
+  const visibleCards = Array.from(gameList.querySelectorAll(".card[style='visibility: visible;']"));
+
+  if (visibleCards.length > 0) {
+    gameList.style.display = "inline-flex";
+    gameList.style.flexWrap = "wrap";
+  } else {
+    gameList.style.display = "grid";
+    gameList.style.gridTemplateColumns = "60px ";
+  }
 });

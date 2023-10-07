@@ -23,10 +23,6 @@ body {
   top: 0;
 }
 
-.shop-name {
-  font-weight: 800;
-}
-
 h1 {
   font-size: 50px;
 }
@@ -54,9 +50,14 @@ footer {
   font-weight: 500;
   font-size: 25;
   color: #ffffff;
+  background-color: #1c4589;
+  padding: 10px;
 }
 
-
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 
 
 .button {
@@ -79,15 +80,6 @@ footer {
   
 }
 
-.card {
-  padding: 20px;
-  margin: 20px 10px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px #4a68e8;
-  border: 2px solid #4a68e8;
-  transition: transform 1s;
-  position: relative;
-}
 
 .background {
   position: center;
@@ -109,7 +101,7 @@ footer {
   margin: 10px;
   position: center;
   bottom: -30px;
-  width: 25%
+  width: 40%;
 }
 
 .background > .button {
@@ -122,7 +114,7 @@ footer {
   margin: 10px;
   position: center;
   bottom: -30px;
-  width: 25%
+  width: 40%
 }
 
 .background > .input {
@@ -137,20 +129,6 @@ footer {
   bottom: -30px;
   width: 25%
 }
-
-.background > .button {
-  border: 1px solid #4a85e8;
-  color: #FFFFFF;
-  background: #4a85e8;
-  padding: 5px 10px;
-  border-radius: 3px;
-  height: 40px;
-  margin: 10px;
-  position: center;
-  bottom: -30px;
-  width: 25%
-}
-
 /* add keyframe animation for float  */
 @keyframes float {
   0%,
@@ -158,13 +136,7 @@ footer {
     bottom: -30px;
     background: #467CD7;
     border: 1px solid #467CD7;
-    width: 25%
-  }
-  60% {
-    bottom: -25px;
-    background: #406EBC;
-    border: 1px solid #406EBC;
-    width: 25%
+    width: 40%
   }
   30% {
     bottom: -20px;
@@ -193,48 +165,19 @@ footer {
   width: 20%;
 }
 
-.check-cart {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 25;
-  color: #FFFFFF;
-  background: #ffffff;
-  border: 2px solid #dddddd;
-  border-radius: 5px;
-  padding: 10px;
-  right: 0;
-  width: 200px;
-  bottom: 0;
-  position: sticky;
-}
-.check-cart > img {
-  width: 30%;
-}
-.cart-value {
-  display: none;
+.gameList {
+  display:block;
+  flex-wrap: nowrap;
+  grid-template-columns: 60px 60px;
 }
 
-
-.special-div > h2 {
-  color: #ed2334;
-}
-.special-div {
-  padding: 100px 10px;
-}
-.checkout {
-  background: #13a0d4;
-  color: #ffffff;
-  width: 100%;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-}
-.contact-us {
-  background: #13a0d4;
-  color: #ffffff;
-  padding: 20px 100px;
-  margin: 50px 0 0 0;
-}
-.contact-us h2 {
-  color: #ffffff;
-  margin: 10px auto;
+.card {
+  padding: 20px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #4a68e8;
+  border: 2px solid #4a68e8;
+  transition: transform 1s;
+  position: relative;
+  visibility: visible;
 }
