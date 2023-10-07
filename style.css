@@ -114,7 +114,7 @@ footer {
   margin: 10px;
   position: center;
   bottom: -30px;
-  width: 40%
+  width: 75%
 }
 
 .background > .input {
@@ -136,13 +136,13 @@ footer {
     bottom: -30px;
     background: #467CD7;
     border: 1px solid #467CD7;
-    width: 40%
+    width: 75%
   }
   30% {
     bottom: -20px;
     background: #395FA1;
     border: 1px solid #395FA1;
-    width: 50%;
+    width: 100%;
   }
 }
 /* Write CSS which will apply the animation on button hovering */
