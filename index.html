@@ -16,44 +16,61 @@
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
-    <link rel="stylesheet" href="/navbar.css">  
+
+    <link rel="stylesheet" href="/navbar.css" />
     <!-- Import the webpage's javascript file -->
     <script src="/script.js"></script>
   </head>
-  <body background="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/926200494705207d4ce5e5840e1bf38e.jpg?v=1696689438010">
+  <body
+    background="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/926200494705207d4ce5e5840e1bf38e.jpg?v=1696689438010"
+  >
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="/index.html" style="text-decoration: none; margin-right: 50%;" class="logo">The legends</a>
-      <ul class="nav-links">
-         <i class="uil uil-times navCloseBtn"></i>
-         <li><a href="index.html" style="text-decoration: none;"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
-          <li><a href="games.html" style="text-decoration: none;"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
-        <li><a href="" style="text-decoration: none;"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Coming soon</a></li>
-      </ul>
-   </nav>
-    <div class="container-fluid brand-div text-center">
-      <h1 style="font-size: 75px;"><br/><br/>
-        Play games for free with<br/> The legends.
-      </h1><br/><br/><br/><br/>
-      
-     <div class="background text-center" style="
-                                                margin: auto;
-                                                width: 50%;
-                                                ">
-      <button
-        class="button"
-        onclick="location.href='games.html'"
-        style="
-               padding: 10px;
-               text-align: center;
-               border-radius: 10px;
-               "
+      <a
+        href="/index.html"
+        style="text-decoration: none; margin-right: 50%"
+        class="logo"
+        >The legends</a
       >
-        Take me to the games page!
-      </button><br /><br /><br /><br />
-    </div>
-      
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none"
+            ><i class="fa-solid fa-house" style="margin-right: 5px"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i
+            >Games</a
+          >
+        </li>
+        <li>
+          <a href="" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Coming
+            soon</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid brand-div text-center">
+      <h1 style="font-size: 75px">
+        <br /><br />
+        Play games for free with<br />
+        The legends.
+      </h1>
+      <br /><br /><br /><br />
+
+      <div class="background text-center" style="margin: auto; width: 50%">
+        <button
+          class="button"
+          onclick="location.href='games.html'"
+          style="padding: 10px; text-align: center; border-radius: 10px"
+        >
+          Take me to the games page!</button
+        ><br /><br /><br /><br />
+      </div>
+
       <h2 class="shop-name">What is the legends?</h2>
       <div class="col-md-12">
         <p class="text-center">
@@ -64,8 +81,58 @@
         </p>
       </div>
     </div>
-    <footer class="text-center">
-      © 2023 Copyright The Legends. UI inspired by Platformer.io
+
+    <h2 class="text-center">Current popular games</h2>
+    <br />
+
+    <div style="
+                background-color: #1c4589;
+                flex-wrap: wrap;
+                ">
+      <div class="col-md-3">
+        <div class="card text-center game-card">
+          <img
+            src="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/vign-tunnel-rush-hk-w8v_u89.jpg?v=1696691641429"
+          />
+          <p class="title">Tunnel rush</p>
+          <button class="button" onclick="location.href='tunnel-rush.html'">
+            Play now
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center">
+          <img
+            src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/slope-game-logo4.jpg?v=1696707433354"
+          />
+          <p class="title">Slope</p>
+          <button class="button" id="toy2" onclick="location.href='slope.html'">
+            Play now
+          </button>
+        </div>
+      </div>
+    </div>
+             <div class="col-md-3">
+          <div class="card text-center">
+            <img src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/drift-boss-m240x240.png?v=1696710770241" />
+            <p class="title">Drift boss</p>
+            <button class="button" onclick="location.href='drift-boss.html'">Play now</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img
+              src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/(1.5.3).png?v=1696709506256"
+            />
+            <p class="title">Minecraft 1.5.2</p>
+            <button class="button" id="toy4" onclick="location.href='minecraft-1.5.2.html'">
+              Play now
+            </button>
+          </div>
+        </div>
+    <footer class="text-center" style="background: #1c4589;"><br/>
+        Copyright the legends. UI inspired from Platformer.io
     </footer>
   </body>
 </html>
