@@ -1,3 +1,5 @@
+<div align='center'>
+
 # The Legends
 
 What are the legends?
