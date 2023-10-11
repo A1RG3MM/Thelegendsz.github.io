@@ -85,24 +85,6 @@ footer {
   position: center;
 }
 
-.card > img {
-  width: 70%;
-  margin: 10px;
-}
-
-
-.card > .button {
-  border: 1px solid #4a85e8;
-  color: #FFFFFF;
-  background: #4a85e8;
-  padding: 5px 10px;
-  border-radius: 3px;
-  height: 40px;
-  margin: 10px;
-  position: center;
-  bottom: -30px;
-  width: 40%;
-}
 
 .background > .button {
   border: 1px solid #4a85e8;
@@ -147,11 +129,6 @@ footer {
 }
 /* Write CSS which will apply the animation on button hovering */
 
-.card > .button:hover {
-  animation: float 3s infinite;
-  transition: top 0.2s ease;
-}
-
 .background > .button:hover {
   animation: float 3s infinite;
   transition: top 0.2s ease;
@@ -166,8 +143,8 @@ footer {
 }
 
 .gameList {
-  display:block;
-  flex-wrap: nowrap;
+  display:flex;
+  flex-wrap: wrap;
   grid-template-columns: 60px 60px;
 }
 
@@ -180,4 +157,38 @@ footer {
   transition: transform 1s;
   position: relative;
   visibility: visible;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card > .button {
+  border: 1px solid #4a85e8;
+  color: #FFFFFF;
+  background: #4a85e8;
+  padding: 5px 10px;
+  border-radius: 3px;
+  height: 40px;
+  margin: 10px;
+  position: center;
+  bottom: -30px;
+  width: 40%;
+}
+
+.card > .button:hover {
+  animation: float 3s infinite;
+  transition: top 0.2s ease;
+}
+
+.card > img {
+  width: 70%;
+  margin: 10px;
 }

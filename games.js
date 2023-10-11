@@ -20,10 +20,8 @@ searchInput.addEventListener("input", function () {
   const visibleCards = Array.from(gameList.querySelectorAll(".card[style='visibility: visible;']"));
 
   if (visibleCards.length > 0) {
-    gameList.style.display = "inline-flex";
-    gameList.style.flexWrap = "wrap";
+
   } else {
-    gameList.style.display = "grid";
-    gameList.style.gridTemplateColumns = "60px ";
+
   }
 });
