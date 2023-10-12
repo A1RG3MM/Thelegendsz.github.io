@@ -13,5 +13,5 @@ The legends is a website for unblocked games at school. (Mainly made this websit
   # Who made the legends?
 </div>
 
-The legends was created by a student in Middle School. He knows a lot of html, css, and JavaScript. (Can't reveal name because of district reasons)
+The legends was created by a student in Middle School. He knows a lot of html, css, and JavaScript. (Can't reveal name because of district reasons)<br/><br/>
 The website was made with Glitch, a website editor that is the owner's favorite.
