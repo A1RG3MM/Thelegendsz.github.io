@@ -9,6 +9,7 @@ What are the legends?
 The legends is a website for unblocked games at school. (Mainly made this website because teachers mostly block google sites.) You can play the website at school, or at home if you want.
 
 <div align="center">
+  
   # Who made the legends?
 </div>
 
