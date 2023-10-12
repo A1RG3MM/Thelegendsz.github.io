@@ -1,6 +1,7 @@
 /* add import font link here */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Press+Start+2P&display=swap");
+
 body {
   /* add font here */
   font-family: "Poppins", sans-serif;
@@ -13,6 +14,7 @@ body {
     1px -1px 0 #000000, /* Top-right shadow (black) */
     -1px 1px 0 #000000, /* Bottom-left shadow (black) */
     1px 1px 0 #000000; /* Bottom-right shadow (black) */
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -50,7 +52,6 @@ footer {
   font-weight: 500;
   font-size: 25;
   color: #ffffff;
-  background-color: #1c4589;
   padding: 10px;
 }
 
@@ -113,24 +114,27 @@ footer {
 }
 /* add keyframe animation for float  */
 @keyframes float {
-  0%,
-  100% {
-    bottom: -30px;
-    background: #467CD7;
-    border: 1px solid #467CD7;
-    width: 40%
+  0% {
+    transform: scale(1);
+    background: #1c4589;
+    border: 1px solid #1c4589;
   }
-  30% {
-    bottom: -20px;
-    background: #395FA1;
-    border: 1px solid #395FA1;
-    width: 50%;
+  100% {
+    transform: scale(1);
+    background: #1c4589;
+    border: 1px solid #1c4589;
+  }
+  50% {
+    transform: scale(1.3);
+    background: #1c4589;
+    border: 1px solid #1c4589;
   }
 }
 /* Write CSS which will apply the animation on button hovering */
 
 .background > .button:hover {
-  animation: float 3s infinite;
+  transform: scale(1.05);
+  animation: float 2s infinite;
   transition: top 0.2s ease;
 }
 

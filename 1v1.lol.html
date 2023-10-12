@@ -116,6 +116,18 @@
           }
         </script>
       </center>
+    <script>
+      function handleKeyPress(event) {
+        // Check if the pressed key matches the desired key (in this example, 'R' key)
+        if (event.key === "`" || event.key === "`") {
+          // Redirect to the desired website URL
+          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+        }
+      }
+
+      // Add an event listener for the 'keydown' event on the document
+      document.addEventListener("keydown", handleKeyPress);
+    </script>
     </div>
   </body>
 </html>

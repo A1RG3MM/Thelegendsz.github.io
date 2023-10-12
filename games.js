@@ -1,3 +1,5 @@
+// Main search bar
+
 const gameList = document.getElementById("gameList");
 const searchInput = document.getElementById("searchInput");
 
@@ -22,3 +24,6 @@ searchInput.addEventListener("input", function () {
 
   }
 });
+
+
+

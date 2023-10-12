@@ -20,13 +20,14 @@
     <link rel="stylesheet" href="/navbar.css" />
     <!-- Import the webpage's javascript file -->
     <script src="/script.js"></script>
-    
-        <link
-          rel="shortcut icon"
-          type="x-icon"
-          href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
-          />
+
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
+    />
   </head>
+
   <body
     background="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/926200494705207d4ce5e5840e1bf38e.jpg?v=1696689438010"
   >
@@ -91,11 +92,8 @@
     <h2 class="text-center">Current popular games</h2>
     <br />
 
-    <div style="
-                background-color: #1c4589;
-                flex-wrap: wrap;
-                ">
-      <div class="col-md-3">
+    <div style="background-color: #1c4589; flex-wrap: wrap">
+      <div class="col-md-3" style="background: #1c4589">
         <div class="card text-center game-card">
           <img
             src="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/vign-tunnel-rush-hk-w8v_u89.jpg?v=1696691641429"
@@ -107,7 +105,7 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-3" style="background: #1c4589">
         <div class="card text-center">
           <img
             src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/slope-game-logo4.jpg?v=1696707433354"
@@ -119,26 +117,47 @@
         </div>
       </div>
     </div>
-             <div class="col-md-3">
-          <div class="card text-center">
-            <img src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/drift-boss-m240x240.png?v=1696710770241" />
-            <p class="title">Drift boss</p>
-            <button class="button" onclick="location.href='drift-boss.html'">Play now</button>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img
-              src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/(1.5.3).png?v=1696709506256"
-            />
-            <p class="title">Minecraft 1.5.2</p>
-            <button class="button" id="toy4" onclick="location.href='minecraft-1.5.2.html'">
-              Play now
-            </button>
-          </div>
-        </div>
-    <footer class="text-center" style="background: #1c4589;"><br/>
-        Copyright the legends. UI inspired from Platformer.io
+    <div class="col-md-3" style="background: #1c4589">
+      <div class="card text-center">
+        <img
+          src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/drift-boss-m240x240.png?v=1696710770241"
+        />
+        <p class="title">Drift boss</p>
+        <button class="button" onclick="location.href='drift-boss.html'">
+          Play now
+        </button>
+      </div>
+    </div>
+    <div class="col-md-3" style="background: #1c4589">
+      <div class="card text-center">
+        <img
+          src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/(1.5.3).png?v=1696709506256"
+        />
+        <p class="title">Minecraft 1.5.2</p>
+        <button
+          class="button"
+          id="toy4"
+          onclick="location.href='minecraft-1.5.2.html'"
+        >
+          Play now
+        </button>
+      </div>
+    </div><br />
+    <footer class="text-center" style="background: #3176E9;">
+      <br /><br />
+      Copyright the legends. UI inspired from Platformer.io
     </footer>
+    <script>
+      function handleKeyPress(event) {
+        // Check if the pressed key matches the desired key (in this example, 'R' key)
+        if (event.key === "`" || event.key === "`") {
+          // Redirect to the desired website URL
+          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+        }
+      }
+
+      // Add an event listener for the 'keydown' event on the document
+      document.addEventListener("keydown", handleKeyPress);
+    </script>
   </body>
 </html>
