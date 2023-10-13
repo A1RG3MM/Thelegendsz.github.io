@@ -23,6 +23,7 @@
 
     <link
       rel="shortcut icon"
+      id="currenticon"
       type="x-icon"
       href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
     />
@@ -34,7 +35,7 @@
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
       <a
-        href="/index.html"
+        href="index.html"
         style="text-decoration: none; margin-right: 50%"
         class="logo"
         >The legends</a
@@ -53,9 +54,8 @@
           >
         </li>
         <li>
-          <a href="" style="text-decoration: none"
-            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Coming
-            soon</a
+          <a href="settings.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Settings</a
           >
         </li>
       </ul>
@@ -68,11 +68,11 @@
       </h1>
       <br /><br /><br /><br />
 
-      <div class="background text-center" style="margin: auto; width: 50%">
+      <div class="backgroundIndex text-center" style="margin: auto; width: 50%">
         <button
           class="button"
           onclick="location.href='games.html'"
-          style="padding: 10px; text-align: center; border-radius: 10px"
+          style="padding: 10px; text-align: center; border: #FFFFFF; border-radius: 10px; color: #FFFFFF;"
         >
           Take me to the games page!</button
         ><br /><br /><br /><br />
@@ -111,7 +111,7 @@
             src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/slope-game-logo4.jpg?v=1696707433354"
           />
           <p class="title">Slope</p>
-          <button class="button" id="toy2" onclick="location.href='slope.html'">
+          <button class="button" onclick="location.href='slope.html'">
             Play now
           </button>
         </div>
@@ -148,6 +148,17 @@
       Copyright the legends. UI inspired from Platformer.io
     </footer>
     <script>
+      const savedTitle = localStorage.getItem("savedTitle");
+      const savedFavicon = localStorage.getItem("savedFavicon");
+
+      if (savedFavicon) {
+        document.getElementById("currenticon").href = savedFavicon;
+      }
+
+      if (savedTitle) {
+        document.title = savedTitle;
+      }
+      
       function handleKeyPress(event) {
         // Check if the pressed key matches the desired key (in this example, 'R' key)
         if (event.key === "`" || event.key === "`") {

@@ -2,6 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Press+Start+2P&display=swap");
 
+::placeholder {
+  color: #E1E1E1;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: #E1E1E1;
+}
+
 body {
   /* add font here */
   font-family: "Poppins", sans-serif;
@@ -86,6 +95,10 @@ footer {
   position: center;
 }
 
+.backgroundIndex {
+  margin-right:auto;
+  margin-left: auto;
+}
 
 .background > .button {
   border: 1px solid #4a85e8;
@@ -130,9 +143,51 @@ footer {
     border: 1px solid #1c4589;
   }
 }
+
+@keyframes smallStretch {
+  0% {
+    background: #325FA8;
+    border: 1px solid #325FA8;
+    width: 40%;
+  }
+  100% {
+    background: #325FA8;
+    border: 1px solid #325FA8;
+    width: 40%;
+  }
+  50% {
+    background: #325FA8;
+    border: 1px solid #325FA8;
+    width: 50%;
+  }
+}
+
+@keyframes stretchy {
+  0% {
+    background: #325FA8;
+    border: 1px solid #325FA8;
+    width: 20%;
+  }
+  100% {
+    background: #325FA8;
+    border: 1px solid #325FA8;
+    width: 20%;
+  }
+  50% {
+    background: #325FA8;
+    border: 1px solid #325FA8;
+    width: 25%;
+  }
+}
 /* Write CSS which will apply the animation on button hovering */
 
 .background > .button:hover {
+  transform: scale(1.05);
+  animation: stretchy 2s infinite;
+  transition: top 0.2s ease;
+}
+
+.backgroundIndex > .button:hover {
   transform: scale(1.05);
   animation: float 2s infinite;
   transition: top 0.2s ease;
@@ -188,7 +243,7 @@ footer {
 }
 
 .card > .button:hover {
-  animation: float 3s infinite;
+  animation: smallStretch 3s infinite;
   transition: top 0.2s ease;
 }
 

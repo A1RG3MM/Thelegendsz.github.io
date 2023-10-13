@@ -16,14 +16,15 @@ searchInput.addEventListener("input", function () {
     }
   });
   
-  const visibleCards = Array.from(gameList.querySelectorAll(".card[style='visibility: visible;']"));
+  const visibleCards = Array.from(gameList.querySelectorAll(".card"));
 
   if (visibleCards.length > 0) {
 
   } else {
-
+    
   }
 });
+
 
 
 

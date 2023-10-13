@@ -23,6 +23,7 @@
     <script src="/script.js"></script>
 
     <link
+      id="currenticon"
       rel="shortcut icon"
       type="x-icon"
       href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
@@ -51,16 +52,15 @@
           >
         </li>
         <li>
-          <a href="" style="text-decoration: none"
-            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Coming
-            soon</a
+          <a href="settings.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Settings</a
           >
         </li>
       </ul>
     </nav>
     <div class="container-fluid">
       <div class="col-md-12">
-        <h2 class="text-center" id="randomText">
+        <h2 class="text-center">
           <br /><br />
           Play games here, or find a new one!
         </h2>
@@ -257,7 +257,6 @@
       </div>
     </div>
     <script src="games.js"></script>
-
     <script>
       function handleKeyPress(event) {
         // Check if the pressed key matches the desired key (in this example, 'R' key)
@@ -271,17 +270,27 @@
       document.addEventListener("keydown", handleKeyPress);
     </script>
     <script>
+          const savedTitle = localStorage.getItem("savedTitle");
+          const savedFavicon = localStorage.getItem("savedFavicon");
+
+          if (savedFavicon) {
+            document.getElementById("currenticon").href = savedFavicon;
+          }
+
+          if (savedTitle) {
+            document.title = savedTitle;
+          }
       const texts = [
         "go do your work you lazy bum!",
         "no test?",
         "qhar",
-        "we die we hate we truth",
+        "how was ur day? :)",
         "sigma beta alpha rizz in ohio momen!1!",
         "tip: press ` to go to canvas",
-        "Ctrl + Shift + Q + Q for edit access",
+        "ctrl + shift + q + q for edit access real",
         "im not platformer.io",
         "i hiked over mount everest to get to school",
-        "whats ur password backwards",
+        "whats ur account password backwards? ;)",
       ];
 
       function getRandomText() {

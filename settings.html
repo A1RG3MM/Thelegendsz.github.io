@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The legends</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="stylesheet" href="/navbar.css" />
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js"></script>
+
+    <link
+      id="currenticon"
+      rel="shortcut icon"
+      type="x-icon"
+      href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+      p {
+      }
+    </style>
+  </head>
+  <body
+    background="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/abstract-dark-blue-background-Graphics-4547097-1%20(1).jpg?v=1697165218160"
+  >
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a
+        href="/index.html"
+        style="text-decoration: none; margin-right: 50%"
+        class="logo"
+        >The legends</a
+      >
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none"
+            ><i class="fa-solid fa-house" style="margin-right: 5px"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i
+            >Games</a
+          >
+        </li>
+        <li>
+          <a href="settings.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i
+            >Settings</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <h2 class="text-center" style="font-size: 45px">Settings</h2>
+      </div>
+      <br />
+      <br />
+      <br /><br /><br /><br />
+      <div
+        style="
+          background: #4a68e8;
+          border: 2px solid #ffffff;
+          border-radius: 30px;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        align="center"
+      >
+        <div class="background text-center">
+          <div class="col-md-12">
+            <p style="color: #0061ff; font-size: 35px; font-weight: 550">
+              Tab cloaker
+            </p>
+          </div>
+          <input
+            type="text"
+            id="title"
+            placeholder="Custom title here..."
+            class="input text-center"
+            onkeyup="changeTitle()"
+            style="border: 1px solid #ffffff"
+          />
+          <button
+            class="button"
+            id="resetTitle"
+            onclick="resetTitle()"
+            style="width: 20%"
+          >
+            Reset title
+          </button>
+          <br /><br />
+          <input
+            type="text"
+            id="changeIcon"
+            placeholder="Insert icon link..."
+            class="input text-center"
+            style="border: 1px solid #ffffff"
+            onkeyup="changeFavicon()"
+          />
+          <button
+            class="button"
+            id="resetIcon"
+            onclick="resetIcon()"
+            style="width: 20%"
+          >
+            Reset icon
+          </button><br/><br/>
+          <p>
+            Tab cloaking is a highly recommended tool that helps you cloak the current tab. This may help you from teachers checking your tabs.
+            <br/>
+            <br/>
+            To cloak the title, put whatever you want and it will set that as the title.<br/>
+            To change the icon, grab an image URL and then paste it onto the input.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const defaultTitle = "The legends";
+      const savedTitle = localStorage.getItem("savedTitle");
+      const savedFavicon = localStorage.getItem("savedFavicon");
+
+      if (savedFavicon) {
+        document.getElementById("currenticon").href = savedFavicon;
+      }
+
+      if (savedTitle) {
+        document.title = savedTitle;
+      }
+
+      function changeTitle() {
+        const title = document.getElementById("title").value;
+        document.title = title;
+
+        localStorage.setItem("savedTitle", document.title);
+      }
+
+      function changeFavicon() {
+        const newFaviconUrl = document.getElementById("changeIcon").value;
+        const faviconLink = document.getElementById("currenticon");
+
+        if (newFaviconUrl.trim() !== "") {
+          faviconLink.href = newFaviconUrl;
+        }
+
+        localStorage.setItem("savedFavicon", newFaviconUrl);
+      }
+
+      function resetTitle() {
+        const title = document.getElementById("title").value;
+        title.value = "";
+        document.title = "The legends";
+
+        localStorage.setItem("savedTitle", document.title);
+      }
+      
+      function resetIcon() {
+        const newFaviconUrl = document.getElementById("changeIcon").value;
+        const faviconLink = document.getElementById("currenticon");
+        
+        faviconLink.href = "https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775";
+        
+        localStorage.setItem("savedFavicon", newFaviconUrl);
+      }
+    </script>
+  </body>
+</html>

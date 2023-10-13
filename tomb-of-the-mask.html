@@ -19,6 +19,13 @@
 
     <link rel="stylesheet" href="/navbar.css" />
 
+    <link
+      id="currenticon"
+      rel="shortcut icon"
+      type="x-icon"
+      href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
+    />
+
     <!-- Import the webpage's javascript file -->
     <script src="/script.js"></script>
   </head>
@@ -29,7 +36,7 @@
       <a
         href="/index.html"
         class="logo"
-        style="text-decoration: none; margin-right: 50%;"
+        style="text-decoration: none; margin-right: 50%"
         >The legends</a
       >
       <ul class="nav-links">
@@ -46,25 +53,26 @@
           >
         </li>
         <li>
-          <a href="" style="text-decoration: none"
-            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Coming
-            soon</a
+          <a href="settings.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Settings</a
           >
         </li>
       </ul>
     </nav>
     <br /><br /><br />
     <div height="100%" class="text-center">
-      <iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/element@9cccb2fafb569c963501a5d818472b561121cea6/totm.xml"
-              width="75%"
-              height="750px"
-              frameborder="0" border="0" scrolling="no"
-        style="
-               border: 5px solid #FFFFFF;
-               border-radius: 30px;">
+      <iframe
+        src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/element@9cccb2fafb569c963501a5d818472b561121cea6/totm.xml"
+        width="75%"
+        height="750px"
+        frameborder="0"
+        border="0"
+        scrolling="no"
+        style="border: 5px solid #ffffff; border-radius: 30px"
+      >
       </iframe>
-      
-            <style>
+
+      <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
         * {
           font-family: "Poppins", sans-serif;
@@ -103,18 +111,28 @@
           }
         </script>
       </center>
-    <script>
-      function handleKeyPress(event) {
-        // Check if the pressed key matches the desired key (in this example, 'R' key)
-        if (event.key === "`" || event.key === "`") {
-          // Redirect to the desired website URL
-          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
-        }
-      }
+      <script>
+          const savedTitle = localStorage.getItem("savedTitle");
+          const savedFavicon = localStorage.getItem("savedFavicon");
 
-      // Add an event listener for the 'keydown' event on the document
-      document.addEventListener("keydown", handleKeyPress);
-    </script>
+          if (savedFavicon) {
+            document.getElementById("currenticon").href = savedFavicon;
+          }
+
+          if (savedTitle) {
+            document.title = savedTitle;
+          }
+        function handleKeyPress(event) {
+          // Check if the pressed key matches the desired key (in this example, 'R' key)
+          if (event.key === "`" || event.key === "`") {
+            // Redirect to the desired website URL
+            window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+          }
+        }
+
+        // Add an event listener for the 'keydown' event on the document
+        document.addEventListener("keydown", handleKeyPress);
+      </script>
     </div>
   </body>
 </html>
