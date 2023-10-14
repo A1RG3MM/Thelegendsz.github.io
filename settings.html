@@ -86,6 +86,7 @@
         "
         align="center"
       >
+        
         <div class="background text-center">
           <div class="col-md-12">
             <p style="color: #0061ff; font-size: 35px; font-weight: 550">
@@ -123,18 +124,57 @@
             onclick="resetIcon()"
             style="width: 20%"
           >
-            Reset icon
-          </button><br/><br/>
+            Reset icon</button
+          ><br /><br />
           <p>
-            Tab cloaking is a highly recommended tool that helps you cloak the current tab. This may help you from teachers checking your tabs.
-            <br/>
-            <br/>
-            To cloak the title, put whatever you want and it will set that as the title.<br/>
-            To change the icon, grab an image URL and then paste it onto the input.
+            Tab cloaking is a highly recommended tool that helps you cloak the
+            current tab. This may help you from teachers checking your tabs.
+            <br />
+            <br />
+            To cloak the title, put whatever you want and it will set that as
+            the title.<br />
+            To change the icon, grab an image URL and then paste it onto the
+            input.
+          </p>
+        </div><br/>
+        <div class="background text-center"
+             style="
+                    color: #FFFFFF;                              
+                    ">
+          ==========================================================================</div>
+        <div class="background text-center" style="
+                                                   margin-top: 10px;
+                                                   ">
+          <div class="col-md-12">
+            <p style="color: #0061ff; font-size: 35px; font-weight: 550">
+              About:blank cloak
+            </p>
+            <p>
+              NOTE: Refreshing the page when it is about:blank will make it deactivate.
+            </p>
+          </div>
+          <button
+            class="button"
+            id=""
+            onclick="openBlankPage()"
+            style="width: 35%"
+          >
+            Click me to cloak the site!
+          </button>
+          <br /><br />
+          <p>
+            About:blank cloaking is a recommended tool since teachers use relay<br/> to block specific sites. (An example is google sites.)<br/><br/>
+            Clicking the button will redirect you to this same page, but the link is about:blank.<br/> This is useful if the teacher is blocking this site.
           </p>
         </div>
       </div>
     </div>
+    
+    <div style="height: 100%">.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.</div>
+
+    <footer class="footer text-center">
+      © Copyright the legends. All rights reserved.
+    </footer>
 
     <script>
       const defaultTitle = "The legends";
@@ -174,15 +214,42 @@
 
         localStorage.setItem("savedTitle", document.title);
       }
-      
+
       function resetIcon() {
         const newFaviconUrl = document.getElementById("changeIcon").value;
         const faviconLink = document.getElementById("currenticon");
-        
-        faviconLink.href = "https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775";
-        
+
+        faviconLink.href =
+          "https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775";
+
         localStorage.setItem("savedFavicon", newFaviconUrl);
       }
+
+      function handleKeyPress(event) {
+        if (event.key === "`" || event.key === "`") {
+          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+        }
+      }
     </script>
+    <script>
+        function openBlankPage() {
+          var win = window.open()
+          var url = window.location.href
+          var iframe = win.document.createElement('iframe')
+          iframe.style.position = "fixed"
+          iframe.style.width = "100%"
+          iframe.style.height = "100%"
+          iframe.style.border = "none"
+          iframe.style.top = "0"
+          iframe.style.bottom = "0"
+          iframe.style.left = "0"
+          iframe.style.right = "0"
+          iframe.style.margin = "0"
+          iframe.style.padding = "0"
+          iframe.style.overflow = "hidden"
+          iframe.src = url
+          win.document.body.appendChild(iframe)
+        }
+  </script>
   </body>
 </html>
