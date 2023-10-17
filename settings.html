@@ -86,7 +86,6 @@
         "
         align="center"
       >
-        
         <div class="background text-center">
           <div class="col-md-12">
             <p style="color: #0061ff; font-size: 35px; font-weight: 550">
@@ -125,7 +124,35 @@
             style="width: 20%"
           >
             Reset icon</button
-          ><br /><br />
+          ><br />
+          <button class="button"
+                  style="width:7%;"
+                  id="setGDrive"
+                  onclick="gDrive();">
+            <img
+                 style="height:100%; width:100%;"
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1147px-Google_Drive_icon_%282020%29.svg.png"
+                 />
+          </button>
+                    <button class="button"
+                  style="width:7%;"
+                  id="setCanvas"
+                  onclick="canvas();">
+            <img
+                 style="height:100%; width:100%;"
+                 src="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico"
+                 />
+          </button>
+                              <button class="button"
+                  style="width:7%;"
+                  id="setSora"
+                  onclick="sora();">
+            <img
+                 style="height:100%; width:100%;"
+                 src="https://soraapp.com/assets/wishbone/11.1.1/assets/images/favicon-192.png"
+                 />
+          </button>
+          <br />
           <p>
             Tab cloaking is a highly recommended tool that helps you cloak the
             current tab. This may help you from teachers checking your tabs.
@@ -136,21 +163,29 @@
             To change the icon, grab an image URL and then paste it onto the
             input.
           </p>
-        </div><br/>
-        <div class="background text-center"
-             style="
-                    color: #FFFFFF;                              
-                    ">
-          ==========================================================================</div>
-        <div class="background text-center" style="
-                                                   margin-top: 10px;
-                                                   ">
+        </div>
+        <br />
+      </div>
+      <div
+        style="
+          background: #4a68e8;
+          border: 2px solid #ffffff;
+          border-radius: 30px;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+        "
+        align="center"
+      >
+        <div class="background text-center" style="margin-top: 10px">
           <div class="col-md-12">
             <p style="color: #0061ff; font-size: 35px; font-weight: 550">
               About:blank cloak
             </p>
             <p>
-              NOTE: Refreshing the page when it is about:blank will make it deactivate.
+              NOTE: Refreshing the page when it is about:blank will make it
+              deactivate.
             </p>
           </div>
           <button
@@ -163,39 +198,46 @@
           </button>
           <br /><br />
           <p>
-            About:blank cloaking is a recommended tool since teachers use relay<br/> to block specific sites. (An example is google sites.)<br/><br/>
-            Clicking the button will redirect you to this same page, but the link is about:blank.<br/> This is useful if the teacher is blocking this site.
+            About:blank cloaking is a recommended tool since teachers use
+            relay<br />
+            to block specific sites. (An example is google sites.)<br /><br />
+            Clicking the button will redirect you to this same page, but the
+            link is about:blank.<br />
+            This is useful if the teacher is blocking this site.
           </p>
         </div>
       </div>
     </div>
-    
-    <div style="height: 100%">.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.</div>
+
+    <div style="height: 100%">
+      .<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.
+    </div>
 
     <footer class="footer text-center">
       © Copyright the legends. All rights reserved.
     </footer>
 
     <script>
+      // Varibles
       const defaultTitle = "The legends";
       const savedTitle = localStorage.getItem("savedTitle");
       const savedFavicon = localStorage.getItem("savedFavicon");
-
+      //Checks for saved favicon
       if (savedFavicon) {
         document.getElementById("currenticon").href = savedFavicon;
       }
-
+      // Checks for saved title
       if (savedTitle) {
         document.title = savedTitle;
       }
-
+      // Changes the title for the website
       function changeTitle() {
         const title = document.getElementById("title").value;
         document.title = title;
-
+        // Saves it to local storage as an item
         localStorage.setItem("savedTitle", document.title);
       }
-
+      // Changes the favicon for the website
       function changeFavicon() {
         const newFaviconUrl = document.getElementById("changeIcon").value;
         const faviconLink = document.getElementById("currenticon");
@@ -203,11 +245,11 @@
         if (newFaviconUrl.trim() !== "") {
           faviconLink.href = newFaviconUrl;
         }
-
+        //Saves it to local storage as an item
         localStorage.setItem("savedFavicon", newFaviconUrl);
       }
-
-      function resetTitle() {
+      
+      function resetTitle() { // Resets the custom title
         const title = document.getElementById("title").value;
         title.value = "";
         document.title = "The legends";
@@ -215,7 +257,7 @@
         localStorage.setItem("savedTitle", document.title);
       }
 
-      function resetIcon() {
+      function resetIcon() { // Resets the custom favicon
         const newFaviconUrl = document.getElementById("changeIcon").value;
         const faviconLink = document.getElementById("currenticon");
 
@@ -225,31 +267,76 @@
         localStorage.setItem("savedFavicon", newFaviconUrl);
       }
 
-      function handleKeyPress(event) {
+      function handleKeyPress(event) { // Redirecting key
         if (event.key === "`" || event.key === "`") {
           window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
         }
       }
+      
+      function sora() { // Built-in custom title and Favicon (SORA)
+        const newFaviconUrl = document.getElementById("changeIcon").value;
+        const faviconLink = document.getElementById("currenticon");
+        const title = document.getElementById("title").value;
+        title.value = "";
+        newFaviconUrl.value = "";
+        
+        document.title = "Sora - Home"
+        localStorage.setItem("savedTitle", document.title);
+        faviconLink.href =
+          "https://soraapp.com/assets/wishbone/11.1.1/assets/images/favicon-192.png";
+        localStorage.setItem("savedFavicon", faviconLink.href);
+      }
+      
+            function canvas() { // Built-in custom title and Favicon (SORA)
+        const newFaviconUrl = document.getElementById("changeIcon").value;
+        const faviconLink = document.getElementById("currenticon");
+        const title = document.getElementById("title").value;
+        title.value = "";
+        newFaviconUrl.value = "";
+        
+        document.title = "Dashboard"
+        localStorage.setItem("savedTitle", document.title);
+        faviconLink.href =
+          "https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico";
+        localStorage.setItem("savedFavicon", faviconLink.href);
+      }
+      
+                  function gDrive() { // Built-in custom title and Favicon (SORA)
+        const newFaviconUrl = document.getElementById("changeIcon").value;
+        const faviconLink = document.getElementById("currenticon");
+        const title = document.getElementById("title").value;
+        title.value = "";
+        newFaviconUrl.value = "";
+        
+        document.title = "My Drive - Google Drive"
+        localStorage.setItem("savedTitle", document.title);
+        faviconLink.href =
+          "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+        localStorage.setItem("savedFavicon", faviconLink.href);
+      }
     </script>
+    <!--
+      Open a blank page
+    -->
     <script>
-        function openBlankPage() {
-          var win = window.open()
-          var url = window.location.href
-          var iframe = win.document.createElement('iframe')
-          iframe.style.position = "fixed"
-          iframe.style.width = "100%"
-          iframe.style.height = "100%"
-          iframe.style.border = "none"
-          iframe.style.top = "0"
-          iframe.style.bottom = "0"
-          iframe.style.left = "0"
-          iframe.style.right = "0"
-          iframe.style.margin = "0"
-          iframe.style.padding = "0"
-          iframe.style.overflow = "hidden"
-          iframe.src = url
-          win.document.body.appendChild(iframe)
-        }
-  </script>
+      function openBlankPage() {
+        var win = window.open();
+        var url = window.location.href;
+        var iframe = win.document.createElement("iframe");
+        iframe.style.position = "fixed";
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.style.top = "0";
+        iframe.style.bottom = "0";
+        iframe.style.left = "0";
+        iframe.style.right = "0";
+        iframe.style.margin = "0";
+        iframe.style.padding = "0";
+        iframe.style.overflow = "hidden";
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+      }
+    </script>
   </body>
 </html>
