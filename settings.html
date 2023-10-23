@@ -125,32 +125,49 @@
           >
             Reset icon</button
           ><br />
-          <button class="button"
-                  style="width:7%;"
-                  id="setGDrive"
-                  onclick="gDrive();">
+          <button
+            class="button"
+            style="width: 7%"
+            id="setGDrive"
+            onclick="gDrive();"
+          >
             <img
-                 style="height:100%; width:100%;"
-                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1147px-Google_Drive_icon_%282020%29.svg.png"
-                 />
+              style="height: 100%; width: 100%"
+              src="https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png"
+            />
           </button>
-                    <button class="button"
-                  style="width:7%;"
-                  id="setCanvas"
-                  onclick="canvas();">
+          <button
+            class="button"
+            style="width: 7%"
+            id="setCanvas"
+            onclick="canvas();"
+          >
             <img
-                 style="height:100%; width:100%;"
-                 src="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico"
-                 />
+              style="height: 100%; width: 100%"
+              src="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico"
+            />
           </button>
-                              <button class="button"
-                  style="width:7%;"
-                  id="setSora"
-                  onclick="sora();">
+          <button
+            class="button"
+            style="width: 7%"
+            id="setSora"
+            onclick="sora();"
+          >
             <img
-                 style="height:100%; width:100%;"
-                 src="https://soraapp.com/assets/wishbone/11.1.1/assets/images/favicon-192.png"
-                 />
+              style="height: 100%; width: 100%"
+              src="https://soraapp.com/assets/wishbone/11.1.1/assets/images/favicon-192.png"
+            />
+          </button>
+            <button
+            class="button"
+            style="width: 7%"
+            id="setNP"
+            onclick="nearpod();"
+          >
+            <img
+              style="height: 100%; width: 100%"
+              src="https://nearpod.com/blog/wp-content/uploads/2018/03/NearpodLogo_512x512.png"
+            />
           </button>
           <br />
           <p>
@@ -248,8 +265,9 @@
         //Saves it to local storage as an item
         localStorage.setItem("savedFavicon", newFaviconUrl);
       }
-      
-      function resetTitle() { // Resets the custom title
+
+      function resetTitle() {
+        // Resets the custom title
         const title = document.getElementById("title").value;
         title.value = "";
         document.title = "The legends";
@@ -257,7 +275,8 @@
         localStorage.setItem("savedTitle", document.title);
       }
 
-      function resetIcon() { // Resets the custom favicon
+      function resetIcon() {
+        // Resets the custom favicon
         const newFaviconUrl = document.getElementById("changeIcon").value;
         const faviconLink = document.getElementById("currenticon");
 
@@ -267,51 +286,69 @@
         localStorage.setItem("savedFavicon", newFaviconUrl);
       }
 
-      function handleKeyPress(event) { // Redirecting key
+      function handleKeyPress(event) {
+        // Redirecting key
         if (event.key === "`" || event.key === "`") {
           window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
         }
       }
-      
-      function sora() { // Built-in custom title and Favicon (SORA)
+
+      function sora() {
+        // Built-in custom title and Favicon (SORA)
         const newFaviconUrl = document.getElementById("changeIcon").value;
         const faviconLink = document.getElementById("currenticon");
         const title = document.getElementById("title").value;
         title.value = "";
         newFaviconUrl.value = "";
-        
-        document.title = "Sora - Home"
+
+        document.title = "Sora - Home";
         localStorage.setItem("savedTitle", document.title);
         faviconLink.href =
           "https://soraapp.com/assets/wishbone/11.1.1/assets/images/favicon-192.png";
         localStorage.setItem("savedFavicon", faviconLink.href);
       }
-      
-            function canvas() { // Built-in custom title and Favicon (SORA)
+
+      function canvas() {
+        // Built-in custom title and Favicon (CANVAS)
         const newFaviconUrl = document.getElementById("changeIcon").value;
         const faviconLink = document.getElementById("currenticon");
         const title = document.getElementById("title").value;
         title.value = "";
         newFaviconUrl.value = "";
-        
-        document.title = "Dashboard"
+
+        document.title = "Dashboard";
         localStorage.setItem("savedTitle", document.title);
         faviconLink.href =
           "https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico";
         localStorage.setItem("savedFavicon", faviconLink.href);
       }
-      
-                  function gDrive() { // Built-in custom title and Favicon (SORA)
+
+      function gDrive() {
+        // Built-in custom title and Favicon (GOOGLE DRIVE)
         const newFaviconUrl = document.getElementById("changeIcon").value;
         const faviconLink = document.getElementById("currenticon");
         const title = document.getElementById("title").value;
         title.value = "";
         newFaviconUrl.value = "";
-        
-        document.title = "My Drive - Google Drive"
+
+        document.title = "My Drive - Google Drive";
         localStorage.setItem("savedTitle", document.title);
         faviconLink.href =
           "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+        localStorage.setItem("savedFavicon", faviconLink.href);
+      }
+      function nearpod() {
+        // Built-in custom title and Favicon (NEARPOD)
+        const newFaviconUrl = document.getElementById("changeIcon").value;
+        const faviconLink = document.getElementById("currenticon");
+        const title = document.getElementById("title").value;
+        title.value = "";
+        newFaviconUrl.value = "";
+
+        document.title = "Nearpod";
+        localStorage.setItem("savedTitle", document.title);
+        faviconLink.href =
+          "https://nearpod.com/blog/wp-content/uploads/2018/03/NearpodLogo_512x512.png";
         localStorage.setItem("savedFavicon", faviconLink.href);
       }
     </script>
