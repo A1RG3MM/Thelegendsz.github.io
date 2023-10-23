@@ -351,6 +351,20 @@
           "https://nearpod.com/blog/wp-content/uploads/2018/03/NearpodLogo_512x512.png";
         localStorage.setItem("savedFavicon", faviconLink.href);
       }
+      function resetAll() {
+        // Function to reset mo
+        const newFaviconUrl = document.getElementById("changeIcon").value;
+        const faviconLink = document.getElementById("currenticon");
+        const title = document.getElementById("title").value;
+        title.value = "";
+        newFaviconUrl.value = "";
+
+        document.title = "The legends";
+        localStorage.setItem("savedTitle", document.title);
+        faviconLink.href =
+          "https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775";
+        localStorage.setItem("savedFavicon", faviconLink.href);
+      }
     </script>
     <!--
       Open a blank page
