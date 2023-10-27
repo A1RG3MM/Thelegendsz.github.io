@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The legends</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="stylesheet" href="/navbar.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js"></script>
+
+    <link
+      id="currenticon"
+      rel="shortcut icon"
+      type="x-icon"
+      href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a
+        href="/index.html"
+        class="logo"
+        style="text-decoration: none; margin-right: 50%"
+        >The legends</a
+      >
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none"
+            ><i class="fa-solid fa-house" style="margin-right: 5px"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i
+            >Games</a
+          >
+        </li>
+        <li>
+          <a href="settings.html" style="text-decoration: none"
+            ><i class="fa-solid fa-gamepad" style="margin-right: 5px"></i>Settings</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <h2 class="text-center">
+          <br /><br />
+          Play games here, or find a new one!
+        </h2>
+        <div class="background text-center">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            class="input text-center"
+          />
+        </div>
+      </div>
+      <div id="gameList">
+        <a class="game-card" href="tunnel-rush.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/vign-tunnel-rush-hk-w8v_u89.jpg?v=1696691641429"
+              />
+              <p class="title">Tunnel rush</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="slope.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/slope-game-logo4.jpg?v=1696707433354"
+              />
+              <p class="title">Slope</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="minecraft.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/1629715866_minecraft-stable.png?v=1696709509176"
+              />
+              <p class="title">Minecraft</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="minecraft-1.5.2.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/(1.5.3).png?v=1696709506256"
+              />
+              <p class="title">Minecraft 1.5.2</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="1v1.lol.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/FDftiXwH_400x400.jpg?v=1696709499371"
+              />
+              <p class="title">1v1.lol</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="justfall.lol.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed.png?v=1696709530206"
+              />
+              <p class="title">Justfall.lol</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="flappy-bird.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/3ndy9omydbr41.jpg?v=1696709511575"
+              />
+              <p class="title">Flappy bird</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="tomb-of-the-mask.html">
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%20(2).png?v=1696710350672"
+              />
+              <p class="title">Tomb of the mask</p>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="among-us.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/IMG1207.jpg?v=1696710368177"
+              />
+              <p class="title">Among us</p>
+            </div>
+          </div></a>
+        <a class="card" href="stack.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%20(1).png?v=1696710355522"
+              />
+              <p class="title">Stack</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="drift-boss.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/drift-boss-m240x240.png?v=1696710770241"
+              />
+              <p class="title">Drift boss</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="retro-bowl.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/shirt-1636403408-3765b8812f0625000d43f99c5df62ab4.jpeg?v=1696710359586"
+              />
+              <p class="title">Retro bowl</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="cookie-clicker.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed.png?v=1696719116862"
+              />
+              <p class="title">Cookie clicker</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="core-ball.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/favicon.png?v=1696710376804"
+              />
+              <p class="title">Core ball</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="death-run-3d.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed.png?v=1696720249381"
+              />
+              <p class="title">Death run 3D</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="OvO.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%202.png?v=1696719121277"
+              />
+              <p class="title">OvO</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="crossy-road.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%20(1).png?v=1696719148165"
+              />
+              <p class="title">Crossy road</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="time-shooter-2.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/time-shooter-2.png?v=1696719153266"
+              />
+              <p class="title">Time shooter 2</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="subway-surfers-sf.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/3568a578-af9b-4deb-9cf9-25befd42abdb.image.png?v=1697509626584"
+              />
+              <p class="title">Subway surfers [San Franscisco]</p>
+            </div>
+          </div></a
+        >
+                <a class="card" href="GD.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/d35e3424-8416-4c2e-b4e0-405a4133bed4.image.png?v=1698208808325"
+              />
+              <p class="title">Geometry dash</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="fnaw.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/301a1138-1793-4e5a-89fa-31cd5aac80f9.image.png?v=1698367953845"
+              />
+              <p class="title">Five nights at winstons</p>
+            </div>
+          </div></a
+        >
+                <a class="card" href="fruit-ninja.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://play-lh.googleusercontent.com/eJ9OJnbRer1jjg5ZeNAnTXKcGd2B_NEqxCp2UsefcCABeFBaj_pNl_WKYBjup2GVGGc"
+              />
+              <p class="title">Fruit ninja</p>
+            </div>
+          </div></a
+        >
+                        <a class="card" href="paper-io-2.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://download.cnet.com/a/img/resize/b412d660aa4e1620750ebd122ee0273f7d633b88/catalog/2018/09/20/2433255f-febe-4c5a-b782-f746231032b3/imgingest-3382865724004801992.jpg?auto=webp&fit=crop&width=64"
+              />
+              <p class="title">Paper.io 2</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="basketball-stars.html"
+          ><div class="col-md-3">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/683b9afd-75c7-4d23-995b-185363a037f9.image.png?v=1698372271661"
+              />
+              <p class="title">Basketball stars</p>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+        <div class="text-center">
+            <h2>
+      Current visits (each time you visit a page):
+      </h2>
+    </div>
+        <div class="pagecounter text-center">
+      <a href="https://www.freecounterstat.com" title="Current counter"
+        ><img
+          src="https://counter6.optistats.ovh/private/freecounterstat.php?c=a6s3s76kf414f7rhcegk2py9p97wx9eu"
+          border="0"
+          title="Current counter"
+          alt="Current counter"
+      /></a>
+    </div>
+    
+    <div style="height: 100%">.<br />.<br />.<br />.</div>
+
+    <footer class="footer text-center" style="width: 75%">
+      © Copyright the legends. All rights reserved.
+    </footer>
+    
+    <script src="games.js"></script>
+    <script>
+      function handleKeyPress(event) {
+        // Check if the pressed key matches the desired key (in this example, 'R' key)
+        if (event.key === "`" || event.key === "`") {
+          // Redirect to the desired website URL
+          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+        }
+      }
+
+      // Add an event listener for the 'keydown' event on the document
+      document.addEventListener("keydown", handleKeyPress);
+    </script>
+    <script>
+          const savedTitle = localStorage.getItem("savedTitle");
+          const savedFavicon = localStorage.getItem("savedFavicon");
+
+          if (savedFavicon) {
+            document.getElementById("currenticon").href = savedFavicon;
+          }
+
+          if (savedTitle) {
+            document.title = savedTitle;
+          }
+      const texts = [
+        "go do your work you lazy bum!",
+        "no test?",
+        "qhar",
+        "discord soon",
+        "sigma beta alpha rizz in ohio momen!1!",
+        "tip: press ` to go to canvas",
+        "ctrl + shift + q + q for free edit access real",
+        "im not platformer.io",
+        "i hiked over mount everest to get to school",
+        "whats ur account password backwards? ;)",
+      ];
+
+      function getRandomText() {
+        const randomIndex = Math.floor(Math.random() * texts.length);
+        return texts[randomIndex];
+      }
+
+      const randomTextElement = document.getElementById("randomText");
+      randomTextElement.textContent = getRandomText();
+      randomTextElement.style.fontSize = "20";
+    </script>
+  </body>
+</html>
