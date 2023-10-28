@@ -3,18 +3,17 @@
   <head>
     <title>The legends</title>
     <!-- Latest compiled and minified CSS -->
-    
-        <link
-      id="currenticon"
-          rel="shortcut icon"
-          type="x-icon"
-          href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
-          />
-    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    
+    <link
+          rel="shortcut icon"
+      id="currenticon"
+          type="x-icon"
+          href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
+          />
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -62,7 +61,7 @@
     </nav>
     <br /><br /><br />
     <div height="100%" class="text-center">
-      <iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://427396048-642845047394716217.preview.editmysite.com/uploads/b/139890129-761103484729797659/files/ovof.xml"
+      <iframe src="https://sussyimposter.netlify.app/projects/chrome-dino/"
               width="75%"
               height="650px"
               frameborder="0" border="0" scrolling="no"
@@ -84,7 +83,7 @@
             Play in about:blank
           </button>
         </div>
-                    <div style="height: 100%">‎ <br />‎ <br />‎ </div>
+            <div style="height: 100%">‎ <br />‎ <br />‎ </div>
 
     <footer class="footer text-center">
       © Copyright the legends. All rights reserved.
@@ -93,12 +92,18 @@
           function openGame() {
             var win = window.open();
             var url =
-              "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://427396048-642845047394716217.preview.editmysite.com/uploads/b/139890129-761103484729797659/files/ovof.xml";
+              "https://sussyimposter.netlify.app/projects/chrome-dino/";
             var iframe = win.document.createElement("iframe");
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            iframe.style.frameBorder = "0";
+          iframe.style.width = "100%"
+          iframe.style.height = "100%"
+          iframe.style.border = "none"
+          iframe.style.top = "0"
+          iframe.style.bottom = "0"
+          iframe.style.left = "0"
+          iframe.style.right = "0"
+          iframe.style.margin = "0"
+          iframe.style.padding = "0"
+          iframe.style.overflow = "hidden"
             iframe.src = url;
             win.document.body.appendChild(iframe);
           }

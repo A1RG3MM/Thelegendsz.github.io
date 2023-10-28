@@ -1,30 +1,16 @@
-// Main search bar
-
-const gameList = document.getElementById("gameList");
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("input", function () {
-  const searchTerm = searchInput.value.toLowerCase();
-  const gameCards = gameList.querySelectorAll(".card");
+function startSearch() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("gameList");
+  li = ul.getElementsByTagName("a");
   
-  gameCards.forEach((card) => {
-    const title = card.querySelector(".title").textContent.toLowerCase();
-    if (title.includes(searchTerm)) {
-      card.style.visibility = "visible";
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("p")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
     } else {
-      card.style.visibility = "hidden";
+      li[i].style.display = "none";
     }
-  });
-  
-  const visibleCards = Array.from(gameList.querySelectorAll(".card"));
-
-  if (visibleCards.length > 0) {
-
-  } else {
-    
   }
-});
-
-
-
-
+}

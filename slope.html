@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/style.css" />
 
     <link rel="stylesheet" href="/navbar.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Import the webpage's javascript file -->
     <script src="/script.js"></script>
@@ -60,9 +62,11 @@
     </nav>
     <br /><br /><br />
     <div height="100%" class="text-center">
-      <iframe src="https://1265870567-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.AOzoyjtjrhQ.O%2Fd%3D1%2Frs%3DAHpOoo9-fA1P7IZFa1fdRj158NoDqrnbYA%2Fm%3D__features__"
+      <iframe src="https://sussyimposter.netlify.app/projects/slope/"
               width="75%"
               height="650px"
+              id="fullscreenIframe"
+              class="gameframe"
         style="
                border: 5px solid #FFFFFF;
                border-radius: 30px;">
@@ -76,40 +80,31 @@
       </style>
 
       <center>
-        <button
-          onclick="openGame()"
-          style="
-            background-color: #4a86e8;
-            color: #fff;
-            border: 1;
-            border-color: #1c4589;
-            vertical-align: center;
-            font-size: 26px;
-            width: 25%;
-            cursor: pointer;
-            border-radius: 10px;
-          "
-        >
-          Play in Fullscreen
-        </button>
+        <div class="background">
+          <button onclick="openGame()" class="button" style="width: 15%">
+            Play in about:blank
+          </button>
+        </div>
                     <div style="height: 100%">‎ <br />‎ <br />‎ </div>
 
     <footer class="footer text-center">
       © Copyright the legends. All rights reserved.
     </footer>
+        <script src="fullscreen.js"></script>
         <script>
-          function openGame() {
-            var win = window.open();
-            var url =
-              "https://1265870567-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.AOzoyjtjrhQ.O%2Fd%3D1%2Frs%3DAHpOoo9-fA1P7IZFa1fdRj158NoDqrnbYA%2Fm%3D__features__";
-            var iframe = win.document.createElement("iframe");
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            iframe.style.frameBorder = "0";
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-          }
+function openGame() {
+  var win = window.open("", "_blank");
+  var url = "https://sussyimposter.netlify.app/projects/slope/";
+  var iframe = win.document.createElement("iframe");
+  iframe.style.width = "100%";
+  iframe.style.height = "100%";
+  iframe.style.border = "none";
+  iframe.style.padding = "0";  // Set padding to 0
+  iframe.style.margin = "0";   // Set margin to 0
+  iframe.style.display = "block"; // Make it a block element to remove any line-height space
+  iframe.src = url;
+  win.document.body.appendChild(iframe);
+}
         </script>
       </center>
     <script>
