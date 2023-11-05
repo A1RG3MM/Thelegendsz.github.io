@@ -26,14 +26,6 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-  background: #1c4589;
-  color: #FFFFFF;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
 h1 {
   font-size: 50px;
 }
