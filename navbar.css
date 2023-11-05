@@ -144,33 +144,11 @@ a:hover {
   }
 }
 
-#google_translate_element {
-  margin: 10px;
-}
-
-select {
-  background: #27292e;
-  font-family: 'Poppins';
-  color: #ffffff;
-  border-radius: 5px;
-  padding: 5px;
-  outline: none;
-  transition: 300ms;
-}
-
 label {
   font-family: 'Poppins';
 }
 
-select:focus {
-  transform: scale(1.1);
-}
 
-option {
-  font-family: 'Poppins';
-  color: #ffffff;
-  padding: 5px;
-}
 
 ::-webkit-scrollbar {
   width: 0.4rem;
