@@ -8,7 +8,6 @@
 
 .nav {
   top: 0px;
-  position: right;
   z-index: 1;
   width:100%;
   padding: 15px 50px;
@@ -19,6 +18,28 @@
   justify-content: flex-end;
   height: 56px;
 }
+
+.nav-time {
+  width:100%;
+  padding: 15px;
+  background: #1c4589;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 10px;
+  height: 56px;
+}
+
+.nav-left {
+  z-index: 1;
+  width:100%;
+  padding: 15px 50px;
+  background: #1c4589;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 10px;
+  height: 56px;
+}
+
 .nav,
 .nav .nav-links {
   display: flex;
@@ -58,6 +79,7 @@ a:hover {
   position:fixed;
   width:100%;
   z-index: 9999;
+  
 }
 
 .nav .nav-links {

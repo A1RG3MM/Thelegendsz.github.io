@@ -11,6 +11,10 @@
   color: #E1E1E1;
 }
 
+* {
+  background-attachment: scroll;
+}
+
 body {
   /* add font here */
   font-family: "Poppins", sans-serif;
@@ -66,6 +70,10 @@ footer {
 
 img {
   border-radius: 30px;
+}
+
+.timer {
+
 }
 
 .pagecounter {
@@ -229,6 +237,7 @@ img {
   transition: transform 1s;
   position: relative;
   visibility: visible;
+  background: #1c4589;
 }
 
 .flex-container {

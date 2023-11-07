@@ -30,16 +30,29 @@
     />
   </head>
   <body>
+    <!-------------
+  -----START-----
+  --------------->
     <div style="display: flex" class="navdiv">
-      <!--NAV-->
-      <nav class="nav text-center"> 
+      <nav class="nav text-center">
         <i class="uil uil-bars navOpenBtn"></i>
-              <a
-        href="/index.html"
-        class="logo"
-        style="text-align: center; margin-right: 50%; text-decoration: none;"
-        >The legends</a
-      >
+        <a
+          href="/index.html"
+          class="logo"
+          style="text-align: center; margin-right: 30%"
+          >The legends</a
+        >
+        <div
+          class="nav-time text-center"
+          style="width: 10%; box-shadow: none"
+        >
+          <i class="uil uil-bars navOpenBtn"></i>
+          <p id="time" class="text-center"></p>
+          <script src="timer.js"></script>
+        </div>
+        
+
+
         <ul class="nav-links">
           <i class="uil uil-times navCloseBtn"></i>
           <li>
@@ -110,18 +123,43 @@
                 <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
               </button></a
             >
+            <a
+              id="pickLink"
+              href="#"
+              style="text-decoration: none"
+              title="Random game"
+            >
+              <button
+                class="button"
+                style="
+                  margin-top: -3px;
+                  padding: 5px;
+                  width: 50px;
+                  margin-left: 10px;
+                  border: 1px solid #ffffff;
+                  background: none;
+                  border-radius: 30px;
+                "
+              >
+                <i class="fa-solid fa-house" style="margin-right: 5px"></i>
+                <span class="glyphicon glyphicon-random"></span>
+              </button>
+            </a>
           </li>
         </ul>
       </nav>
     </div>
-    
+   <script src="random.js"></script>
+    <!-------------
+   ------END------
+  --------------->
     <div class="container-fluid">
       <div class="col-md-12">
         <h2 class="text-center">
           <br /><br />
           Play games here, or find a new one!
         </h2>
-        <div class="background text-center">
+        <div class="background text-center" style="z-index: 999">
           <input
             type="text"
             id="searchInput"
@@ -134,17 +172,17 @@
       </div>
       <div id="gameList">
         <a class="game-card text-center" href="tunnel-rush.html">
-          <div class="col-md-3 text-center">
+          <div class="col-md-2 text-center">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/vign-tunnel-rush-hk-w8v_u89.jpg?v=1696691641429"
               />
-             <p class="title">Tunnel rush</p>
+              <p class="title">Tunnel rush</p>
             </div>
           </div>
         </a>
         <a class="card" href="slope.html">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/slope-game-logo4.jpg?v=1696707433354"
@@ -154,7 +192,7 @@
           </div>
         </a>
         <a class="card" href="minecraft.html">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/1629715866_minecraft-stable.png?v=1696709509176"
@@ -164,7 +202,7 @@
           </div>
         </a>
         <a class="card" href="minecraft-1.5.2.html">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/(1.5.3).png?v=1696709506256"
@@ -174,7 +212,7 @@
           </div>
         </a>
         <a class="card" href="1v1.lol.html">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/FDftiXwH_400x400.jpg?v=1696709499371"
@@ -184,7 +222,7 @@
           </div>
         </a>
         <a class="card" href="justfall.lol.html">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://play-lh.googleusercontent.com/-0rSllZ8as88Jcs3iZ7-JCFyTb3YLB-HjR7bY7P6q_2MAswmDH4h1qNPfFiaZqzkkg=w240-h480-rw"
@@ -194,7 +232,7 @@
           </div>
         </a>
         <a class="card" href="flappy-bird.html">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/3ndy9omydbr41.jpg?v=1696709511575"
@@ -204,26 +242,27 @@
           </div>
         </a>
         <a class="card" href="tomb-of-the-mask.html">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%20(2).png?v=1696710350672"
               />
-              <p class="title">Tomb of the mask</p>
+              <p class="title" style="font-size:13px;">Tomb of the mask</p>
             </div>
           </div>
         </a>
         <a class="card" href="among-us.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/IMG1207.jpg?v=1696710368177"
               />
               <p class="title">Among us</p>
             </div>
-          </div></a>
+          </div></a
+        >
         <a class="card" href="stack.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%20(1).png?v=1696710355522"
@@ -233,7 +272,7 @@
           </div></a
         >
         <a class="card" href="drift-boss.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/drift-boss-m240x240.png?v=1696710770241"
@@ -243,7 +282,7 @@
           </div></a
         >
         <a class="card" href="retro-bowl.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/shirt-1636403408-3765b8812f0625000d43f99c5df62ab4.jpeg?v=1696710359586"
@@ -253,7 +292,7 @@
           </div></a
         >
         <a class="card" href="cookie-clicker.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed.png?v=1696719116862"
@@ -263,7 +302,7 @@
           </div></a
         >
         <a class="card" href="core-ball.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/favicon.png?v=1696710376804"
@@ -273,7 +312,7 @@
           </div></a
         >
         <a class="card" href="death-run-3d.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed.png?v=1696720249381"
@@ -283,7 +322,7 @@
           </div></a
         >
         <a class="card" href="OvO.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%202.png?v=1696719121277"
@@ -293,7 +332,7 @@
           </div></a
         >
         <a class="card" href="crossy-road.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%20(1).png?v=1696719148165"
@@ -303,7 +342,7 @@
           </div></a
         >
         <a class="card" href="time-shooter-2.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/time-shooter-2.png?v=1696719153266"
@@ -313,17 +352,17 @@
           </div></a
         >
         <a class="card" href="subway-surfers-sf.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/3568a578-af9b-4deb-9cf9-25befd42abdb.image.png?v=1697509626584"
               />
-              <p class="title">Subway surfers [SF]</p>
+              <p class="title" style="font-size:13.5px;">Subway surfers SF</p>
             </div>
           </div></a
         >
-                <a class="card" href="GD.html"
-          ><div class="col-md-3">
+        <a class="card" href="GD.html"
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/d35e3424-8416-4c2e-b4e0-405a4133bed4.image.png?v=1698208808325"
@@ -333,17 +372,17 @@
           </div></a
         >
         <a class="card" href="fnaw.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/301a1138-1793-4e5a-89fa-31cd5aac80f9.image.png?v=1698367953845"
               />
-              <p class="title">Five nights at winstons</p>
+              <p class="title">F.N.A.W.</p>
             </div>
           </div></a
         >
-                <a class="card" href="fruit-ninja.html"
-          ><div class="col-md-3">
+        <a class="card" href="fruit-ninja.html"
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://play-lh.googleusercontent.com/eJ9OJnbRer1jjg5ZeNAnTXKcGd2B_NEqxCp2UsefcCABeFBaj_pNl_WKYBjup2GVGGc"
@@ -352,8 +391,8 @@
             </div>
           </div></a
         >
-                        <a class="card" href="paper-io-2.html"
-          ><div class="col-md-3">
+        <a class="card" href="paper-io-2.html"
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQrRhg18wZKUY5AZlHvM64EjPH9aI3OHRzwVPJGo&s"
@@ -363,7 +402,7 @@
           </div></a
         >
         <a class="card" href="basketball-stars.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/683b9afd-75c7-4d23-995b-185363a037f9.image.png?v=1698372271661"
@@ -372,8 +411,8 @@
             </div>
           </div></a
         >
-                <a class="card" href="chrome-dino.html"
-          ><div class="col-md-3">
+        <a class="card" href="chrome-dino.html"
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/6ea573d0-c0a6-4aec-8dbb-67c2b15bc6a2/Untitled%20design.png?v=1698460251334"
@@ -383,7 +422,7 @@
           </div></a
         >
         <a class="card" href="drive-mad.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://play-lh.googleusercontent.com/V_egAxch0phxs10H_Z1QpWRrsH4phd8egT_5ZjYlFbXzXvwpUGpmJMn2h6HgbGkSlZSM"
@@ -393,7 +432,7 @@
           </div></a
         >
         <a class="card" href="stickman-hook.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://play-lh.googleusercontent.com/yXqBI1Vb1b-xjwmXLE2T7FQbgHIxfvjze1b6jO2aLHfy8Y8ta7NFSEVqZoPHtM2Ajyrl"
@@ -403,7 +442,7 @@
           </div></a
         >
         <a class="card" href="rolly-vortex.html"
-          ><div class="col-md-3">
+          ><div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-649249-52.jpg"
@@ -412,14 +451,153 @@
             </div>
           </div></a
         >
+        <a class="card" href="vex-3.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/vex3/vex3.png"
+              />
+              <p class="title">Vex 3</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="vex-4.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/vex4/vex4.png"
+              />
+              <p class="title">Vex 4</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="vex-5.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/vex5/vex.jpeg"
+              />
+              <p class="title">Vex 5</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="vex-6.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/vex6/assets/icon.jpeg"
+              />
+              <p class="title">Vex 6</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="vex-7.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/vex7/assets/icon.jpeg"
+              />
+              <p class="title">Vex 7</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="orb-farm.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/6ea573d0-c0a6-4aec-8dbb-67c2b15bc6a2/2d9c9c3d-2ce5-4646-ba2e-d3be25fb9f47.image.png?v=1699321176903"
+              />
+              <p class="title">Orb farm</p>
+            </div>
+          </div></a
+        >
+          <a class="card" href="pixel-shooter.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/6ea573d0-c0a6-4aec-8dbb-67c2b15bc6a2/Untitled%20design%20(4).png?v=1699326931119"
+              />
+              <p class="title">Pixel shooter</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="elastic-man.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://cdn.glitch.global/6ea573d0-c0a6-4aec-8dbb-67c2b15bc6a2/Untitled%20design%20(5).png?v=1699326983783"
+              />
+              <p class="title">Elastic man</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="red-button.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/bigredbutton/bigredbutton.png"
+              />
+              <p class="title">Red button</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="soccer-random.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/soccer-random/unnamed.png"
+              />
+              <p class="title">Soccer random</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="boxing-random.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/boxing-random/512x512.jpg"
+              />
+              <p class="title">Boxing random</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="GDscratch.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/geodash/geoscratchicon.png"
+              />
+              <p class="title">GD [Scratch]</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="FNF.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/fridaynightfunkin/fnf-icon.jpg"
+              />
+              <p class="title" style="font-size:12px;">Friday night funkin</p>
+            </div>
+          </div></a
+        >
+        <a class="card" href="SSNY.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="https://13gendszgamez.netlify.app/projects/subway-surfers-ny/NewYorkIcon.png"
+              />
+              <p class="title" style="font-size:13.5px;">Subway surfers NY<br/></p>
+            </div>
+          </div></a
+        >
       </div>
     </div>
-        <div class="text-center">
-            <h2>
-      Current visits (each time you visit a page):
-      </h2>
+
+    <div class="text-center">
+      <h2>Current visits (each time you visit a page):</h2>
     </div>
-        <div class="pagecounter text-center">
+    <div class="pagecounter text-center">
       <a href="https://www.freecounterstat.com" title="Current counter"
         ><img
           src="https://counter6.optistats.ovh/private/freecounterstat.php?c=a6s3s76kf414f7rhcegk2py9p97wx9eu"
@@ -428,13 +606,13 @@
           alt="Current counter"
       /></a>
     </div>
-    
+
     <div style="height: 100%">.<br />.<br />.<br />.</div>
 
     <footer class="footer text-center" style="width: 75%">
       © Copyright the legends. All rights reserved.
     </footer>
-    
+
     <script src="games.js"></script>
     <script>
       function handleKeyPress(event) {
