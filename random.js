@@ -1,5 +1,5 @@
 // "",
-
+  
 const pages = [
   "slope.html",
   "tunnel-rush.html",
@@ -34,7 +34,24 @@ const pages = [
   "vex-4.html",
   "vex-5.html",
   "vex-6.html",
-  "vex-7.html",  
+  "vex-7.html", 
+  "orb-farm.html",
+  "soccer-random.html",
+  "boxing-random.html",
+  "pixel-shooter.html",
+  "elastic-man.html",
+  "red-button.html",
+  "FNF.html",
+  "GDscratch.html",
+  "SSNY.html",
+  "CKC.html",
+  "csgo-clicker.html",
+  "stick-merge.html",
+  "baldi-basics.html",
+  "monkeytype.html",
+  "fireboy-watergirl.html",
+  "OvO-dimensions.html",
+  
 ];
 
 const pickLink = document.getElementById("pickLink");
