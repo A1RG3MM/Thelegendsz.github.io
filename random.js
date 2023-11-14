@@ -51,7 +51,12 @@ const pages = [
   "monkeytype.html",
   "fireboy-watergirl.html",
   "OvO-dimensions.html",
-  
+  "roblox.html",
+  "galaxy-riders.html",
+  "helix-jump.html",
+  "temple-run-2.html",
+  "slither-io.html",
+  "hextris.html",
 ];
 
 const pickLink = document.getElementById("pickLink");

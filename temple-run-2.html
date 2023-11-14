@@ -3,17 +3,16 @@
   <head>
     <title>The legends</title>
     <!-- Latest compiled and minified CSS -->
-    
-        <link
-      id="currenticon"
-          rel="shortcut icon"
-          type="x-icon"
-          href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
-          />
-    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      id="currenticon"
+      type="x-icon"
+      href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
     />
 
     <!-- jQuery library -->
@@ -53,7 +52,6 @@
           <script src="timer.js"></script>
         </div>
         
-
 
         <ul class="nav-links">
           <i class="uil uil-times navCloseBtn"></i>
@@ -150,22 +148,26 @@
           </li>
         </ul>
       </nav>
-    </div>    <script src="random.js"></script>
+    </div>
+<script src="random.js"></script>
   <!-------------
    ------END------
   --------------->
     <br /><br />.<br />.
     <div height="100%" class="text-center">
-      <iframe src="https://13gendszgamez.netlify.app/projects/ovo/"
-              width="75%"
-              height="650px"
-              frameborder="0" border="0" scrolling="no"
-        style="
-               border: 5px solid #FFFFFF;
-               border-radius: 30px;">
+      <iframe
+        src="https://games-cloudflare.defnotgxmes.ink/temple-run-2/"
+        width="75%"
+        height="650px"
+        frameborder="0"
+        border="0"
+        scrolling="no"
+        id="fullscreenIframe"
+        style="border: 5px solid #ffffff; border-radius: 30px"
+      >
       </iframe>
-      
-            <style>
+
+      <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
         * {
           font-family: "Poppins", sans-serif;
@@ -178,48 +180,53 @@
             Play in about:blank
           </button>
         </div>
-                    <div style="height: 100%">‎ <br />‎ <br />‎ </div>
-
-    <footer class="footer text-center">
-      © Copyright the legends. All rights reserved.
-    </footer>
-        <script>
+        <div style="height: 100%">‎ <br />‎ <br />‎</div>
+        <footer class="footer text-center">
+          © Copyright the legends. All rights reserved.
+        </footer>
+        <script src="fullscreen.js"></script>
+        <script>          
           function openGame() {
             var win = window.open();
-            var url =
-              "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://427396048-642845047394716217.preview.editmysite.com/uploads/b/139890129-761103484729797659/files/ovof.xml";
+            var url = "https://games-cloudflare.defnotgxmes.ink/temple-run-2/";
             var iframe = win.document.createElement("iframe");
             iframe.style.width = "100%";
             iframe.style.height = "100%";
             iframe.style.border = "none";
-            iframe.style.frameBorder = "0";
+            iframe.style.top = "0";
+            iframe.style.bottom = "0";
+            iframe.style.left = "0";
+            iframe.style.right = "0";
+            iframe.style.margin = "0";
+            iframe.style.padding = "0";
+            iframe.style.overflow = "hidden";
             iframe.src = url;
             win.document.body.appendChild(iframe);
           }
         </script>
       </center>
-    <script>
-          const savedTitle = localStorage.getItem("savedTitle");
-          const savedFavicon = localStorage.getItem("savedFavicon");
+      <script>
+        const savedTitle = localStorage.getItem("savedTitle");
+        const savedFavicon = localStorage.getItem("savedFavicon");
 
-          if (savedFavicon) {
-            document.getElementById("currenticon").href = savedFavicon;
-          }
-
-          if (savedTitle) {
-            document.title = savedTitle;
-          }
-      function handleKeyPress(event) {
-        // Check if the pressed key matches the desired key (in this example, 'R' key)
-        if (event.key === "`" || event.key === "`") {
-          // Redirect to the desired website URL
-          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+        if (savedFavicon) {
+          document.getElementById("currenticon").href = savedFavicon;
         }
-      }
 
-      // Add an event listener for the 'keydown' event on the document
-      document.addEventListener("keydown", handleKeyPress);
-    </script>
+        if (savedTitle) {
+          document.title = savedTitle;
+        }
+        function handleKeyPress(event) {
+          // Check if the pressed key matches the desired key (in this example, 'R' key)
+          if (event.key === "`" || event.key === "`") {
+            // Redirect to the desired website URL
+            window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+          }
+        }
+
+        // Add an event listener for the 'keydown' event on the document
+        document.addEventListener("keydown", handleKeyPress);
+      </script>
     </div>
   </body>
 </html>
