@@ -18,9 +18,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
     <link
       rel="shortcut icon"
       id="currenticon"
@@ -30,126 +30,127 @@
   </head>
 
   <body
-    background="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/926200494705207d4ce5e5840e1bf38e.jpg?v=1696689438010"
+    background="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/1YjV.gif?v=1696651381710"
   >
   <!-------------
   -----START-----
   --------------->
-<div style="display: flex" class="navdiv">
-      <nav class="nav text-center">
+  <div style="display: flex" class="navdiv">
+    <nav class="nav text-center">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a
+        href="/index.html"
+        class="logo"
+        style="text-align: center; margin-right: 30%"
+        >The legends</a
+      >
+      <div
+        class="nav-time text-center"
+        style="width: 10%; box-shadow: none"
+      >
         <i class="uil uil-bars navOpenBtn"></i>
-        <a
-          href="/index.html"
-          class="logo"
-          style="text-align: center; margin-right: 30%"
-          >The legends</a
-        >
-        <div
-          class="nav-time text-center"
-          style="width: 10%; box-shadow: none"
-        >
-          <i class="uil uil-bars navOpenBtn"></i>
-          <p id="time" class="text-center"></p>
-          <script src="timer.js"></script>
-        </div>
+        <p id="time" class="text-center"></p>
+        <script src="assets/js/timer.js"></script>
+      </div>
+      
 
-        <ul class="nav-links">
-          <i class="uil uil-times navCloseBtn"></i>
-          <li>
-            <a href="index.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
-              </button>
-            </a>
-          </li>
-          <li>
-            <a href="games.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  margin-left: -10px;
-                  width: 100px;
-                  background: none;
-                  border: 1px solid #ffffff;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
-              </button></a
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
             >
-          </li>
-          <li>
-            <a href="settings.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  margin-left: -10px;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house"></i>Settings
-              </button></a
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                margin-left: -10px;
+                width: 100px;
+                background: none;
+                border: 1px solid #ffffff;
+                border-radius: 30px;
+              "
             >
-            <a href="extra.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  margin-left: 5px;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
-              </button></a
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
+            </button></a
+          >
+        </li>
+        <li>
+          <a href="settings.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                margin-left: -10px;
+                border-radius: 30px;
+              "
             >
-            <a
-              id="pickLink"
-              href="#"
-              style="text-decoration: none"
-              title="Random game"
+              <i class="fa-solid fa-house"></i>Settings
+            </button></a
+          >
+          <a href="extra.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                margin-left: 5px;
+                background: none;
+                border-radius: 30px;
+              "
             >
-              <button
-                class="button"
-                style="
-                  margin-top: -3px;
-                  padding: 5px;
-                  width: 50px;
-                  margin-left: 10px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>
-                <span class="glyphicon glyphicon-random"></span>
-              </button>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    <script src="random.js"></script>
-    </div>
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
+            </button></a
+          >
+          <a
+            id="pickLink"
+            href="#"
+            style="text-decoration: none"
+            title="Random game"
+          >
+            <button
+              class="button"
+              style="
+                margin-top: -3px;
+                padding: 5px;
+                width: 50px;
+                margin-left: 10px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>
+              <span class="glyphicon glyphicon-random"></span>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>    <script src="assets/js/random.js"></script>
   <!-------------
    ------END------
   --------------->
@@ -197,7 +198,7 @@
     </div>
     <div style="flex-wrap: wrap">
       
-      <a href="retro-bowl.html" style="text-decoration: none">
+      <a href="games/retro-bowl.html" style="text-decoration: none">
         <div class="col-md-2">
           <div class="card text-center game-card">
             <img
@@ -207,7 +208,7 @@
           </div>
         </div>
       </a>
-      <a href="slope.html" style="text-decoration: none">
+      <a href="games/slope.html" style="text-decoration: none">
         <div class="col-md-2">
           <div class="card text-center">
             <img
@@ -217,7 +218,7 @@
           </div>
         </div>
       </a>
-      <a href="drift-boss.html" style="text-decoration: none">
+      <a href="games/drift-boss.html" style="text-decoration: none">
         <div class="col-md-2">
           <div class="card text-center">
             <img
@@ -227,7 +228,7 @@
           </div>
         </div>
       </a>
-      <a href="minecraft-1.5.2.html" style="text-decoration: none">
+      <a href="games/minecraft-1.5.2.html" style="text-decoration: none">
         <div class="col-md-2">
           <div class="card text-center">
             <img
@@ -237,7 +238,7 @@
           </div>
         </div>
       </a>
-      <a href="tomb-of-the-mask.html" style="text-decoration: none">
+      <a href="games/tomb-of-the-mask.html" style="text-decoration: none">
         <div class="col-md-2">
           <div class="card text-center">
             <img
@@ -247,7 +248,7 @@
           </div>
         </div>
       </a>
-      <a href="OvO.html" style="text-decoration: none">
+      <a href="games/OvO.html" style="text-decoration: none">
         <div class="col-md-2">
           <div class="card text-center">
             <img
@@ -257,17 +258,7 @@
           </div>
         </div>
       </a>
-      <a href="GD.html" style="text-decoration: none">
-        <div class="col-md-2">
-          <div class="card text-center">
-            <img
-              src="https://play-lh.googleusercontent.com/ixHXzBWPmmKWIBxDMfjbIXK10UQCTDvIYOcs_uLXHCRbdsz2siJFYfb7MqckU8eC3Ks=w240-h480-rw"
-            />
-            <p class="title">Geometry dash</p>
-          </div>
-        </div>
-      </a>
-      <a href="drive-mad.html" style="text-decoration: none">
+      <a href="games/drive-mad.html" style="text-decoration: none">
         <div class="col-md-2">
           <div class="card text-center">
             <img
@@ -431,27 +422,36 @@
     
 
     <script>
+      // Varibles
+      const defaultTitle = "The legends";
       const savedTitle = localStorage.getItem("savedTitle");
       const savedFavicon = localStorage.getItem("savedFavicon");
-
+      const savedKey = localStorage.getItem("savedKey");
+      const savededulink = localStorage.getItem("savedEDU");
+      //Checks for saved favicon
       if (savedFavicon) {
         document.getElementById("currenticon").href = savedFavicon;
       }
-
+      // Checks for saved title
       if (savedTitle) {
         document.title = savedTitle;
       }
-
       function handleKeyPress(event) {
-        // Check if the pressed key matches the desired key (in this example, 'R' key)
-        if (event.key === "`" || event.key === "`") {
-          // Redirect to the desired website URL
-          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+        if (event.key === savedKey || event.key === savedKey) {
+          if (savededulink.includes("https://")) {
+            window.location.href = savededulink;
+          } else {
+            window.location.href = "https://" + savededulink;
+          }
+
         }
       }
-
-      // Add an event listener for the 'keydown' event on the document
       document.addEventListener("keydown", handleKeyPress);
+
+      
+      ///////////////////////////
+      //\\//\\//\\//\\//\\//\\//
+      //////////////////////////
     </script>
   </body>
 </html>

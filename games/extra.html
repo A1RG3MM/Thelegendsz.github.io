@@ -15,9 +15,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
 
-    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
     <!-- Import the webpage's javascript file -->
     <script src="/script.js"></script>
 
@@ -41,7 +41,7 @@
     <nav class="nav text-center">
       <i class="uil uil-bars navOpenBtn"></i>
       <a
-        href="/index.html"
+        href="../index.html"
         class="logo"
         style="text-align: center; margin-right: 30%"
         >The legends</a
@@ -52,7 +52,7 @@
       >
         <i class="uil uil-bars navOpenBtn"></i>
         <p id="time" class="text-center"></p>
-        <script src="assets/js/timer.js"></script>
+        <script src="../assets/js/timer.js"></script>
       </div>
       
 
@@ -60,7 +60,7 @@
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
         <li>
-          <a href="index.html" style="text-decoration: none">
+          <a href="../index.html" style="text-decoration: none">
             <button
               class="button"
               style="
@@ -77,7 +77,7 @@
           </a>
         </li>
         <li>
-          <a href="games.html" style="text-decoration: none">
+          <a href="../games.html" style="text-decoration: none">
             <button
               class="button"
               style="
@@ -95,7 +95,7 @@
           >
         </li>
         <li>
-          <a href="settings.html" style="text-decoration: none">
+          <a href="../settings.html" style="text-decoration: none">
             <button
               class="button"
               style="
@@ -111,7 +111,7 @@
               <i class="fa-solid fa-house"></i>Settings
             </button></a
           >
-          <a href="extra.html" style="text-decoration: none">
+          <a href="../extra.html" style="text-decoration: none">
             <button
               class="button"
               style="
@@ -152,7 +152,7 @@
         </li>
       </ul>
     </nav>
-  </div>    <script src="assets/js/random.js"></script>
+  </div>    <script src="../assets/js/random.js"></script>
   <!-------------
    ------END------
   --------------->
@@ -183,10 +183,11 @@
               Page cloaker
             </p>
           </div>
+          <p>Add link (MAKE SURE YOU ADD HTTPS://):</p>
           <input
             type="text"
             id="link"
-            placeholder="Add custom URL..."
+            placeholder="Add edu link..."
             class="input text-center"
             style="border: 1px solid #ffffff"
                  />
@@ -227,35 +228,12 @@
           <p>--====DOGE UNBLOCKER LINKS====--</p>
           <button
             class="button"
-            onclick="location.href='https://library.itparadiis.eu/'"
+            onclick="location.href='https://discord.com/invite/sWPHCdxCPU'"
             style="width: 35%"
           >
-            DOGE LINK #1
+            DOGE LINK GENERATOR BOT
           </button>
-
-          <button
-            class="button"
-            onclick="location.href='https://heart.healthlink-test.ch/'"
-            style="width: 35%"
-          >
-            DOGE LINK #2
-          </button>
-
-          <button
-            class="button"
-            onclick="location.href='https://info.karenbuzzard.com/app'"
-            style="width: 35%"
-          >
-            DOGE LINK #3
-          </button>
-
-          <button
-            class="button"
-            onclick="location.href='https://history.pereras.eu/app'"
-            style="width: 35%"
-          >
-            DOGE LINK #4</button
-          ><br /><br />
+          <br /><br />
           <p>--====SHADOW TABBING LINKS====--</p>
           <button
             class="button"
@@ -371,14 +349,14 @@
           <br />
           <button
             class="button"
-            onclick="location.href='games/hdtoday-tv.html'"
+            onclick="location.href='hdtoday.html'"
             style="width: 50%"
           >
             HD Today (FREE MOVIES WITH ADS)</button
           ><br />
           <button
             class="button"
-            onclick="location.href='games/youtube.html'"
+            onclick="location.href='youtube.html'"
             style="width: 50%"
           >
             YouTube Videos [UNRESTRICTED]</button
@@ -519,8 +497,6 @@
     </footer>
 
     <script>
-      // Varibles
-      const defaultTitle = "The legends";
       const savedTitle = localStorage.getItem("savedTitle");
       const savedFavicon = localStorage.getItem("savedFavicon");
       const savedKey = localStorage.getItem("savedKey");
@@ -549,7 +525,6 @@
       Open a blank page
     -->
     <script>
-      var EDUlink = document.getElementById("link");
       //Function for about:blank
       function openBlankPage() {
         var win = window.open();
@@ -566,12 +541,7 @@
         iframe.style.margin = "0";
         iframe.style.padding = "0";
         iframe.style.overflow = "hidden";
-        
-        if (EDUlink.value.includes("https://")) {
-          iframe.src = url;
-        } else {
-          iframe.src = "https://" + url;
-        }
+        iframe.src = url;
         win.document.body.appendChild(iframe);
       }
     </script>

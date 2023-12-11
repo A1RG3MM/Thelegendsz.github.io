@@ -14,13 +14,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="/navbar.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="assets/css/navbar.css" />
 
     <link
       id="currenticon"
@@ -33,123 +29,122 @@
     <!-------------
   -----START-----
   --------------->
-    <div style="display: flex" class="navdiv">
-      <nav class="nav text-center">
+  <div style="display: flex" class="navdiv">
+    <nav class="nav text-center">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a
+        href="/index.html"
+        class="logo"
+        style="text-align: center; margin-right: 30%"
+        >The legends</a
+      >
+      <div
+        class="nav-time text-center"
+        style="width: 10%; box-shadow: none"
+      >
         <i class="uil uil-bars navOpenBtn"></i>
-        <a
-          href="/index.html"
-          class="logo"
-          style="text-align: center; margin-right: 30%"
-          >The legends</a
-        >
-        <div
-          class="nav-time text-center"
-          style="width: 10%; box-shadow: none"
-        >
-          <i class="uil uil-bars navOpenBtn"></i>
-          <p id="time" class="text-center"></p>
-          <script src="timer.js"></script>
-        </div>
-        
+        <p id="time" class="text-center"></p>
+        <script src="assets/js/timer.js"></script>
+      </div>
+      
 
 
-        <ul class="nav-links">
-          <i class="uil uil-times navCloseBtn"></i>
-          <li>
-            <a href="index.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
-              </button>
-            </a>
-          </li>
-          <li>
-            <a href="games.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  margin-left: -10px;
-                  width: 100px;
-                  background: none;
-                  border: 1px solid #ffffff;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
-              </button></a
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
             >
-          </li>
-          <li>
-            <a href="settings.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  margin-left: -10px;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house"></i>Settings
-              </button></a
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                margin-left: -10px;
+                width: 100px;
+                background: none;
+                border: 1px solid #ffffff;
+                border-radius: 30px;
+              "
             >
-            <a href="extra.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  margin-left: 5px;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
-              </button></a
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
+            </button></a
+          >
+        </li>
+        <li>
+          <a href="settings.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                margin-left: -10px;
+                border-radius: 30px;
+              "
             >
-            <a
-              id="pickLink"
-              href="#"
-              style="text-decoration: none"
-              title="Random game"
+              <i class="fa-solid fa-house"></i>Settings
+            </button></a
+          >
+          <a href="extra.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                margin-left: 5px;
+                background: none;
+                border-radius: 30px;
+              "
             >
-              <button
-                class="button"
-                style="
-                  margin-top: -3px;
-                  padding: 5px;
-                  width: 50px;
-                  margin-left: 10px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>
-                <span class="glyphicon glyphicon-random"></span>
-              </button>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-   <script src="random.js"></script>
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
+            </button></a
+          >
+          <a
+            id="pickLink"
+            href="#"
+            style="text-decoration: none"
+            title="Random game"
+          >
+            <button
+              class="button"
+              style="
+                margin-top: -3px;
+                padding: 5px;
+                width: 50px;
+                margin-left: 10px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>
+              <span class="glyphicon glyphicon-random"></span>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>    <script src="assets/js/random.js"></script>
     <!-------------
    ------END------
   --------------->
@@ -163,25 +158,15 @@
             type="text"
             id="searchInput"
             placeholder="Search"
-            class="input text-center"
+            class="searching text-center"
             onload="startSearch()"
             onkeyup="startSearch()"
           />
         </div>
       </div>
       <div id="gameList">
-        <a class="game-card text-center" href="tunnel-rush.html">
-          <div class="col-md-2 text-center">
-            <div class="card text-center">
-              <img
-                src="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/vign-tunnel-rush-hk-w8v_u89.jpg?v=1696691641429"
-              />
-              <p class="title">Tunnel rush<br/></p>
-
-            </div>
-          </div>
-        </a>
-        <a class="game-card" href="slope.html">
+        
+        <a class="game-card" href="games/slope.html">
           <div class="col-md-2">
             <div class="card text-center">
               <img
@@ -192,18 +177,18 @@
             </div>
           </div>
         </a>
-        <a class="game-card" href="minecraft.html">
+        <a class="game-card" href="games/minecraft.html">
           <div class="col-md-2">
             <div class="card text-center">
               <img
                 src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/1629715866_minecraft-stable.png?v=1696709509176"
               />
-              <p class="title">Minecraft</p>
+              <p class="title">Minecraft [JS]</p>
 
             </div>
           </div>
         </a>
-        <a class="game-card" href="minecraft-1.5.2.html">
+        <a class="game-card" href="games/minecraft-1.5.2.html">
           <div class="col-md-2">
             <div class="card text-center">
               <img
@@ -214,7 +199,7 @@
             </div>
           </div>
         </a>
-        <a class="game-card" href="1v1.lol.html">
+        <a class="game-card" href="games/1v1.lol.html">
           <div class="col-md-2">
             <div class="card text-center">
               <img
@@ -224,7 +209,7 @@
             </div>
           </div>
         </a>
-        <a class="game-card" href="justfall.lol.html">
+        <a class="game-card" href="games/justfall.lol.html">
           <div class="col-md-2">
             <div class="card text-center">
               <img
@@ -234,7 +219,7 @@
             </div>
           </div>
         </a>
-        <a class="game-card" href="flappy-bird.html">
+        <a class="game-card" href="games/flappy-bird.html">
           <div class="col-md-2">
             <div class="card text-center">
               <img
@@ -244,7 +229,7 @@
             </div>
           </div>
         </a>
-        <a class="game-card" href="tomb-of-the-mask.html">
+        <a class="game-card" href="games/tomb-of-the-mask.html">
           <div class="col-md-2">
             <div class="card text-center">
               <img
@@ -254,7 +239,7 @@
             </div>
           </div>
         </a>
-        <a class="game-card" href="among-us.html"
+        <a class="game-card" href="games/among-us.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -264,17 +249,17 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="stack.html"
+        <a class="game-card" href="games/stack.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
-                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed%20(1).png?v=1696710355522"
+                src="https://play-lh.googleusercontent.com/WRlGQXa9Pav7YZPW-P5X8PAga0lF2T1BAzmasxB9qV_1_om5DgmMbxOFo2SK8ZN5K5k"
               />
               <p class="title">Stack</p>
             </div>
           </div></a
         >
-        <a class="game-card" href="drift-boss.html"
+        <a class="game-card" href="games/drift-boss.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -284,7 +269,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="retro-bowl.html"
+        <a class="game-card" href="games/retro-bowl.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -294,17 +279,17 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="cookie-clicker.html"
+        <a class="game-card" href="games/cookie-clicker.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
-                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/unnamed.png?v=1696719116862"
+                src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok"
               />
               <p class="title">Cookie clicker</p>
             </div>
           </div></a
         >
-        <a class="game-card" href="core-ball.html"
+        <a class="game-card" href="games/core-ball.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -314,7 +299,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="death-run-3d.html"
+        <a class="game-card" href="games/death-run-3d.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -324,7 +309,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="OvO.html"
+        <a class="game-card" href="games/OvO.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -334,7 +319,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="crossy-road.html"
+        <a class="game-card" href="games/crossy-road.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -344,7 +329,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="time-shooter-2.html"
+        <a class="game-card" href="games/time-shooter-2.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -355,27 +340,9 @@
           </div></a
         >
         
-        <a class="game-card" href="GD.html"
-          ><div class="col-md-2">
-            <div class="card text-center">
-              <img
-                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/d35e3424-8416-4c2e-b4e0-405a4133bed4.image.png?v=1698208808325"
-              />
-              <p class="title">Geometry dash</p>
-            </div>
-          </div></a
-        >
-        <a class="game-card" href="fnaw.html"
-          ><div class="col-md-2">
-            <div class="card text-center">
-              <img
-                src="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/301a1138-1793-4e5a-89fa-31cd5aac80f9.image.png?v=1698367953845"
-              />
-              <p class="title">F.N.A.W.</p>
-            </div>
-          </div></a
-        >
-        <a class="game-card" href="fruit-ninja.html"
+        
+        
+        <a class="game-card" href="games/fruit-ninja.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -385,7 +352,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="paper-io-2.html"
+        <a class="game-card" href="games/paper-io-2.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -395,7 +362,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="basketball-stars.html"
+        <a class="game-card" href="games/basketball-stars.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -405,7 +372,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="chrome-dino.html"
+        <a class="game-card" href="games/chrome-dino.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -415,7 +382,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="drive-mad.html"
+        <a class="game-card" href="games/drive-mad.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -425,7 +392,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="stickman-hook.html"
+        <a class="game-card" href="games/stickman-hook.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -435,7 +402,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="rolly-vortex.html"
+        <a class="game-card" href="games/rolly-vortex.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -445,7 +412,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="vex-3.html"
+        <a class="game-card" href="games/vex-3.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -455,7 +422,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="vex-4.html"
+        <a class="game-card" href="games/vex-4.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -465,7 +432,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="vex-5.html"
+        <a class="game-card" href="games/vex-5.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -475,7 +442,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="vex-6.html"
+        <a class="game-card" href="games/vex-6.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -485,7 +452,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="vex-7.html"
+        <a class="game-card" href="games/vex-7.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -495,7 +462,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="orb-farm.html"
+        <a class="game-card" href="games/orb-farm.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -505,7 +472,7 @@
             </div>
           </div></a
         >
-          <a class="game-card" href="pixel-shooter.html"
+          <a class="game-card" href="games/pixel-shooter.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -515,7 +482,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="elastic-man.html"
+        <a class="game-card" href="games/elastic-man.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -525,7 +492,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="red-button.html"
+        <a class="game-card" href="games/red-button.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -535,7 +502,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="soccer-random.html"
+        <a class="game-card" href="games/soccer-random.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -545,7 +512,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="boxing-random.html"
+        <a class="game-card" href="games/boxing-random.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -555,7 +522,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="GDscratch.html"
+        <a class="game-card" href="games/GDscratch.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -565,7 +532,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="FNF.html"
+        <a class="game-card" href="games/FNF.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -575,7 +542,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="subway-surfers.html"
+        <a class="game-card" href="games/subway-surfers.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -585,7 +552,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="CKC.html"
+        <a class="game-card" href="games/CKC.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -595,7 +562,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="csgo-clicker.html"
+        <a class="game-card" href="games/csgo-clicker.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -605,7 +572,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="baldi-basics.html"
+        <a class="game-card" href="games/baldi-basics.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -615,7 +582,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="stick-merge.html"
+        <a class="game-card" href="games/stick-merge.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -625,7 +592,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="fireboy-watergirl.html"
+        <a class="game-card" href="games/fireboy-watergirl.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -635,7 +602,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="monkeytype.html"
+        <a class="game-card" href="games/monkeytype.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -645,7 +612,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="OvO-dimensions.html"
+        <a class="game-card" href="games/OvO-dimensions.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -655,7 +622,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="roblox.html"
+        <a class="game-card" href="games/roblox.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -665,7 +632,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="galaxy-rider.html"
+        <a class="game-card" href="games/galaxy-rider.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -675,17 +642,7 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="helix-jump.html"
-          ><div class="col-md-2">
-            <div class="card text-center">
-              <img
-                src="https://play-lh.googleusercontent.com/sax_I5GKFKjcSHo06-IDEswIAWs3DXjzSDz-5iqmpylocY2RDqf3IpNb213bZl4SdA"
-              />
-              <p class="title">Helix jump</p>
-            </div>
-          </div></a
-        >
-        <a class="game-card" href="temple-run-2.html"
+        <a class="game-card" href="games/temple-run-2.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
@@ -695,23 +652,43 @@
             </div>
           </div></a
         >
-        <a class="game-card" href="slither-io.html"
+        <a class="game-card" href="games/yohoho-io.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
-                src="https://play-lh.googleusercontent.com/oObkhKfUXOY5yzheKe9w1Y1pXZBgdiSksMeNmT0BijoQ8J75maTCIW2TA7-6pA6EMA"
+                src="https://play-lh.googleusercontent.com/4yqjsxq9ntZ2dftqxChXmsm-kZ293L6tBc8bghIFxvMn6T8v8jdGqld1CT_vuocU6g"
               />
-              <p class="title">Slither.io</p>
+              <p class="title">Yohoho.io</p>
             </div>
           </div></a
         >
-        <a class="game-card" href="hextris.html"
+        <a class="game-card" href="games/jetpack-joyride.html"
           ><div class="col-md-2">
             <div class="card text-center">
               <img
-                src="https://play-lh.googleusercontent.com/0jCMd4dIANQ9QD3Q1r0y7-ZnpVb74dMHHtsz9-qPFDSRHRVvg-Q3ENsaCOabUsvsz7Q"
+                src="https://cdn.glitch.global/6ea573d0-c0a6-4aec-8dbb-67c2b15bc6a2/d5d34cb9ce7b617b93338982aa0958ab.png?v=1701554302440"
               />
-              <p class="title">Hextris</p>
+              <p class="title">Jetpack Joyride</p>
+            </div>
+          </div></a
+        >
+        <a class="game-card" href="games/fnaw.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="assets/images/FNAW.png"
+              />
+              <p class="title">F.N.A.W.</p>
+            </div>
+          </div></a
+        >
+        <a class="game-card" href="games/airmash.html"
+          ><div class="col-md-2">
+            <div class="card text-center">
+              <img
+                src="assets/images/Airmash.png"
+              />
+              <p class="title">Airmash</p>
             </div>
           </div></a
         >
@@ -738,33 +715,38 @@
       © Copyright the legends. All rights reserved.
     </footer>
 
-    <script src="games.js"></script>
+    <script src="assets/js/games.js"></script>
     <script>
+    // Varibles
+      const defaultTitle = "The legends";
+      const savedTitle = localStorage.getItem("savedTitle");
+      const savedFavicon = localStorage.getItem("savedFavicon");
+      const savedKey = localStorage.getItem("savedKey");
+      const savededulink = localStorage.getItem("savedEDU");
+      //Checks for saved favicon
+      if (savedFavicon) {
+        document.getElementById("currenticon").href = savedFavicon;
+      }
+      // Checks for saved title
+      if (savedTitle) {
+        document.title = savedTitle;
+      }
       function handleKeyPress(event) {
-        // Check if the pressed key matches the desired key (in this example, 'R' key)
-        if (event.key === "`" || event.key === "`") {
-          // Redirect to the desired websit eURL
-          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
+        if (event.key === savedKey || event.key === savedKey) {
+          if (savededulink.includes("https://")) {
+            window.location.href = savededulink;
+          } else {
+            window.location.href = "https://" + savededulink;
+          }
+
         }
       }
-
-      // Add an event listener for the 'keydown' event on the document
       document.addEventListener("keydown", handleKeyPress);
     </script>
     <script>
-          const savedTitle = localStorage.getItem("savedTitle");
-          const savedFavicon = localStorage.getItem("savedFavicon");
-
-          if (savedFavicon) {
-            document.getElementById("currenticon").href = savedFavicon;
-          }
-
-          if (savedTitle) {
-            document.title = savedTitle;
-          }
       const texts = [
         "Ctrl + shift + Q + Q for vbucks",
-        "/summon homework 64",
+        "update schedule is the best tbh",
         "Credits to game developers!",
         "Discord soon (maybe longer)",
         "Get your lazy bum back to work!",

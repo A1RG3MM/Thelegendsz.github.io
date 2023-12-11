@@ -14,12 +14,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="/navbar.css" />
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="assets/css/navbar.css" />
 
     <link
       id="currenticon"
@@ -27,134 +24,129 @@
       type="x-icon"
       href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-      p {
-      }
-    </style>
   </head>
   <body
-    background="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/abstract-dark-blue-background-Graphics-4547097-1%20(1).jpg?v=1697165218160"
+    background="https://cdn.glitch.global/e70d5871-8531-48c2-b29b-ba2b7a9a9404/blue-background-background.gif?v=1696642503936"
   >
   <!-------------
   -----START-----
   --------------->
-<div style="display: flex" class="navdiv">
-      <nav class="nav text-center">
+  <div style="display: flex" class="navdiv">
+    <nav class="nav text-center">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a
+        href="/index.html"
+        class="logo"
+        style="text-align: center; margin-right: 30%"
+        >The legends</a
+      >
+      <div
+        class="nav-time text-center"
+        style="width: 10%; box-shadow: none"
+      >
         <i class="uil uil-bars navOpenBtn"></i>
-        <a
-          href="/index.html"
-          class="logo"
-          style="text-align: center; margin-right: 30%"
-          >The legends</a
-        >
-        <div
-          class="nav-time text-center"
-          style="width: 10%; box-shadow: none"
-        >
-          <i class="uil uil-bars navOpenBtn"></i>
-          <p id="time" class="text-center"></p>
-          <script src="timer.js"></script>
-        </div>
-        
+        <p id="time" class="text-center"></p>
+        <script src="assets/js/timer.js"></script>
+      </div>
+      
 
 
-        <ul class="nav-links">
-          <i class="uil uil-times navCloseBtn"></i>
-          <li>
-            <a href="index.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
-              </button>
-            </a>
-          </li>
-          <li>
-            <a href="games.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  margin-left: -10px;
-                  width: 100px;
-                  background: none;
-                  border: 1px solid #ffffff;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
-              </button></a
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
             >
-          </li>
-          <li>
-            <a href="settings.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  margin-left: -10px;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house"></i>Settings
-              </button></a
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                margin-left: -10px;
+                width: 100px;
+                background: none;
+                border: 1px solid #ffffff;
+                border-radius: 30px;
+              "
             >
-            <a href="extra.html" style="text-decoration: none">
-              <button
-                class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  width: 100px;
-                  border: 1px solid #ffffff;
-                  margin-left: 5px;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
-              </button></a
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
+            </button></a
+          >
+        </li>
+        <li>
+          <a href="settings.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                margin-left: -10px;
+                border-radius: 30px;
+              "
             >
-            <a
-              id="pickLink"
-              href="#"
-              style="text-decoration: none"
-              title="Random game"
+              <i class="fa-solid fa-house"></i>Settings
+            </button></a
+          >
+          <a href="extra.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                margin-left: 5px;
+                background: none;
+                border-radius: 30px;
+              "
             >
-              <button
-                class="button"
-                style="
-                  margin-top: -3px;
-                  padding: 5px;
-                  width: 50px;
-                  margin-left: 10px;
-                  border: 1px solid #ffffff;
-                  background: none;
-                  border-radius: 30px;
-                "
-              >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>
-                <span class="glyphicon glyphicon-random"></span>
-              </button>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>    <script src="random.js"></script>
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
+            </button></a
+          >
+          <a
+            id="pickLink"
+            href="#"
+            style="text-decoration: none"
+            title="Random game"
+          >
+            <button
+              class="button"
+              style="
+                margin-top: -3px;
+                padding: 5px;
+                width: 50px;
+                margin-left: 10px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>
+              <span class="glyphicon glyphicon-random"></span>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>    <script src="assets/js/random.js"></script>
   <!-------------
    ------END------
   --------------->
@@ -272,16 +264,6 @@
           >
             Reset title and icon</button
           ><br />
-          <p>
-            Tab cloaking is a highly recommended tool that helps you cloak the
-            current tab. This may help you from teachers checking your tabs.
-            <br />
-            <br />
-            To cloak the title, put whatever you want and it will set that as
-            the title.<br />
-            To change the icon, grab an image URL and then paste it onto the
-            input.
-          </p>
         </div>
         <br />
       </div>
@@ -326,6 +308,56 @@
           </p>
         </div>
       </div>
+      <div
+        style="
+          background: #4a68e8;
+          border: 2px solid #ffffff;
+          border-radius: 30px;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+        "
+        align="center"
+      >
+        <div class="background text-center" style="margin-top: 10px">
+          <div class="col-md-12">
+            <p style="color: #0061ff; font-size: 35px; font-weight: 550">
+              Panic key system
+            </p>
+          </div>
+          <button
+            class="button"
+            id="recordKey"
+            style="width: 35%"
+          >
+            Record keystroke
+          </button>
+          <br />
+          <div style="border: 2px solid #003F9E; border-radius: 15px; width: 50%; margin-right:auto; margin-left:auto;">
+            <p>
+            Recorded keystroke:
+          </p>
+          <p id="ksText" style="color: #339CFF; font-size:25px;">
+            Record a keystroke!
+          </p>
+          </div>
+          <input
+            type="text"
+            id="edulink"
+            placeholder="Add custom link..."
+            class="input text-center"
+            style="border: 1px solid #ffffff"
+          />
+          <button
+            class="button"
+            id="setedulink"
+            style="width: 20%"
+          >
+            Change link
+          </button>
+        </div>
+      </div>
     </div>
 
     <div style="height: 100%">
@@ -341,6 +373,11 @@
       const defaultTitle = "The legends";
       const savedTitle = localStorage.getItem("savedTitle");
       const savedFavicon = localStorage.getItem("savedFavicon");
+      const savedKey = localStorage.getItem("savedKey");
+      const savededulink = localStorage.getItem("savedEDU");
+      var displayKeystroke = document.getElementById("ksText");
+      var changeURL = document.getElementById("setedulink");
+      let eduinput = document.getElementById("edulink");
       //Checks for saved favicon
       if (savedFavicon) {
         document.getElementById("currenticon").href = savedFavicon;
@@ -349,10 +386,69 @@
       if (savedTitle) {
         document.title = savedTitle;
       }
-      // Changes the title for the website
+      if (savedKey) {
+        displayKeystroke.textContent = savedKey;
+      }
+      if (savededulink) {
+        eduinput.value = savededulink;
+      }
+      ///////////////////////////
+      //\\//\\//\\//\\//\\//\\//
+      //////////////////////////
+      var recordButton = document.getElementById("recordKey");
+      
+      function recordKeystroke(keystrokeeeee) {
+        displayKeystroke.textContent = keystrokeeeee.key;
+        if (keystrokeeeee.key !== " ") {
+          document.removeEventListener("keydown", recordKeystroke);
+          localStorage.setItem("savedKey", displayKeystroke.textContent);
+          location.reload();
+        } else {
+          displayKeystroke.textContent = "[ENTER A KEY]";
+        }
+      }  
+      
+      recordButton.addEventListener("click", function() {
+        displayKeystroke.textContent = "[ENTER A KEY]";
+        document.addEventListener("keydown", recordKeystroke);
+        
+      });
+      changeURL.addEventListener("click", function() {
+        if (eduinput.value !== "") {
+          localStorage.setItem("savedEDU", eduinput.value);
+          location.reload();
+        } else {
+          alert('Error: cannot set a blank link, or must include ".com"');
+        }
+      });
+      
+      function handleKeyPress(event) {
+        if (event.key === savedKey || event.key === savedKey) {
+          if (savededulink.includes("https://")) {
+            window.location.href = savededulink;
+          } else {
+            window.location.href = "https://" + savededulink;
+          }
+
+        }
+      }
+      document.addEventListener("keydown", handleKeyPress);
+
+      
+      ///////////////////////////
+      //\\//\\//\\//\\//\\//\\//
+      //////////////////////////
+      
+            // Changes the title for the website
       function changeTitle() {
         const title = document.getElementById("title").value;
-        document.title = title;
+        if (title !== "") {
+          document.title = title;
+        } else
+          {
+            document.title = "The legends";
+          }
+        
         // Saves it to local storage as an item
         localStorage.setItem("savedTitle", document.title);
       }
@@ -363,6 +459,8 @@
 
         if (newFaviconUrl.trim() !== "") {
           faviconLink.href = newFaviconUrl;
+        } else{
+          faviconLink.href = "https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
         }
         //Saves it to local storage as an item
         localStorage.setItem("savedFavicon", newFaviconUrl);
@@ -373,7 +471,7 @@
         const title = document.getElementById("title").value;
         title.value = "";
         document.title = "The legends";
-
+        
         localStorage.setItem("savedTitle", document.title);
       }
 
@@ -387,13 +485,8 @@
 
         localStorage.setItem("savedFavicon", newFaviconUrl);
       }
-
-      function handleKeyPress(event) {
-        // Redirecting key
-        if (event.key === "`" || event.key === "`") {
-          window.location.href = "https://fisd.instructure.com/"; // Replace with the desired URL
-        }
-      }
+      
+         
 
       function sora() {
         // Built-in custom title and Favicon (SORA)
