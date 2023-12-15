@@ -29,14 +29,6 @@ function toggleFullscreen() {
     }
   }
 }
-// Retrieve the app name and image from local storage
-const appName = localStorage.getItem('app-name');
-const appImage = localStorage.getItem('app-image');
-const showNameAndImg = localStorage.getItem('shownameandimg');
-
-// Set the content and src attribute
-document.getElementById('app-name').textContent = appName;
-document.getElementById('app-image').src = appImage;
 
 function backtopage() {
   const type = localStorage.getItem('iframe-type');
