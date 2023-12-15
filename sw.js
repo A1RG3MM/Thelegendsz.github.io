@@ -1,4 +1,4 @@
-var cacheName = 'bchsunblockedgames';
+var cacheName = 'th31egendsz';
 var filesToCache = [
   '/js/sw.js'
 ];
