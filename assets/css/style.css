@@ -72,6 +72,13 @@ img {
   border-radius: 30px;
 }
 
+pre {
+  text-shadow: none;
+  color: red;
+  background: none;
+  border: none;
+}
+
 .pagecounter {
   background: #1c4589;
   width: 50%;
@@ -102,9 +109,12 @@ img {
   background: #1c4589;
   color: #FFFFFF;
   padding: 10px;
+  transition: width 0.3s ease;
+
 }
 .searching:focus {
   width: 250px; /* Adjust expanded width */
+  transition: width 0.3s ease;
 }
 .play {
   background-color: #4a86e8;
