@@ -1,26 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7487249208457563"
-     crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/iframe.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>My Drive - Google Drive</title>
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicons/google-drive-ico.ico">
-  <meta name="google" content="notranslate">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+/>
+
+<!-- Include Luxon library -->
+<script src="https://cdn.jsdelivr.net/npm/luxon@2.0.4/build/global/luxon.min.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Import the webpage's stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<link rel="stylesheet" href="assets/css/navbar.css" />
+<link
+  rel="shortcut icon"
+  id="currenticon"
+  type="x-icon"
+  href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
+/>
 </head>
-<body>
-  <iframe id="iframe" src="" frameborder="0" allowfullscreen></iframe>
-  <input id="key-input" type="text" placeholder="Key" style="display: none;" value="]">
-  <input id="website-input" type="text" placeholder="Website" style="display: none;" value="https://classroom.gooogle.com">
-  <script src="/assets/js/iframe.js"></script>
-  <script src="/uv/uv.bundle.js" defer></script>
-  <script src="/uv/uv.config.js" defer></script>
-  <script src="/register-sw.js" defer></script>
-  <script src="/index.js" defer></script>
-  <form id="uv-form">
-    <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
-  </form>
-</div>
+<body style="background-color: black;">
+  <div style="display: flex" class="navdiv">
+    <nav class="nav text-center">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a
+        href="/index.html"
+        class="logo"
+        style="text-align: center; margin-right: 30%"
+        >The legends</a
+      >
+      <div
+        class="nav-time text-center"
+        style="width: 10%; box-shadow: none"
+      >
+        <i class="uil uil-bars navOpenBtn"></i>
+        <p id="time" class="text-center"></p>
+        <script src="assets/js/timer.js"></script>
+      </div>
+      
+
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                margin-left: -10px;
+                width: 100px;
+                background: none;
+                border: 1px solid #ffffff;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
+            </button></a
+          >
+        </li>
+        <li>
+          <a href="settings.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                margin-left: -10px;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house"></i>Settings
+            </button></a
+          >
+          <a href="extra.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                margin-left: 5px;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
+            </button></a
+          >
+          <a
+            id="pickLink"
+            href="#"
+            style="text-decoration: none"
+            title="Random game"
+          >
+            <button
+              class="button"
+              style="
+                margin-top: -3px;
+                padding: 5px;
+                width: 50px;
+                margin-left: 10px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>
+              <span class="glyphicon glyphicon-random"></span>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>    <script src="assets/js/random.js"></script>
+  <div>
+    <iframe id="iframe" src="" frameborder="0" allowfullscreen></iframe>
+    <input id="key-input" type="text" placeholder="Key" style="display: none;" value="]">
+    <input id="website-input" type="text" placeholder="Website" style="display: none;" value="https://classroom.gooogle.com">
+    <script src="/assets/js/iframe.js"></script>
+    <script src="/uv/uv.bundle.js" defer></script>
+    <script src="/uv/uv.config.js" defer></script>
+    <script src="/register-sw.js" defer></script>
+    <script src="/index.js" defer></script>
+    <form id="uv-form">
+      <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+    </form>
+  </div>
 </body>
 </html>
