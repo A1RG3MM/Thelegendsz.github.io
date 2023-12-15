@@ -171,15 +171,6 @@ embed {
   top: 15px;
   font-size: 55px;
 }
-body.dark-theme {
-  background-color: #121212; 
-  color: #ffffff;
-}
-body.dark-theme .modal-content {
-  border-color: white;
-  background-color: #121212; 
-  color: #ffffff;
-}
 body.dark-theme .modal-content select { 
   color: #ffffff;
   border-color: #ffffff;
@@ -188,28 +179,6 @@ body.dark-theme .modal-content select {
 }
 body.dark-theme .buttons {
   border-color: #ffffff;
-}
-
-body.light-theme {
-  background-color: #ffffff; 
-  color: #000000;
-}
-body.light-theme .modal-content {
-  border-color: black;
-  background-color: #ffffff;
-  color: #000000;
-}
-body.light-theme .modal-content select {
-  color: #000000;
-  border-color: #000000;
-  border-radius: 10px;
-  background-color: #d4caca; 
-}
-body.light-theme .buttons {
-  border-color: #000000;
-}
-body.light-theme .back-arrow {
-  color: #000000;
 }
 .theme-selection {
   display: flex;
