@@ -29,122 +29,138 @@
         />
       </head>
 <body>
-    <div style="display: flex" class="navdiv">
-        <nav class="nav text-center">
-          <i class="uil uil-bars navOpenBtn"></i>
+  <div style="display: flex" class="navdiv">
+    <nav class="nav text-center">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a
+        href="/index.html"
+        class="logo"
+        style="text-align: center; margin-right: 30%"
+        >The legends</a
+      >
+      <div
+        class="nav-time text-center"
+        style="width: 10%; box-shadow: none"
+      >
+        <i class="uil uil-bars navOpenBtn"></i>
+        <p id="time" class="text-center"></p>
+        <script src="assets/js/timer.js"></script>
+      </div>
+      
+
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li>
+          <a href="index.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="games.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                margin-left: -10px;
+                width: 100px;
+                background: none;
+                border: 1px solid #ffffff;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
+            </button></a
+          >
+        </li>
+        <li>
+          <a href="extra.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                margin-left: -10px;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
+            </button></a
+          >
+          <a href="proxy.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                margin-left: 7px;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Proxy
+            </button></a
+          >
+          <a href="settings.html" style="text-decoration: none">
+            <button
+              class="button"
+              style="
+                margin-top: 10px;
+                padding: 5px;
+                width: 100px;
+                border: 1px solid #ffffff;
+                background: none;
+                margin-left: 7px;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house"></i>Settings
+            </button></a
+          >
           <a
-            href="index.html"
-            class="logo"
-            style="text-align: center; margin-right: 30%"
-            >The legends</a
+            id="pickLink"
+            href="#"
+            style="text-decoration: none"
+            title="Random game"
           >
-          <div
-            class="nav-time text-center"
-            style="width: 10%; box-shadow: none"
-          >
-            <i class="uil uil-bars navOpenBtn"></i>
-            <p id="time" class="text-center"></p>
-            <script src="assets/js/timer.js"></script>
-          </div>
-          
-    
-    
-          <ul class="nav-links">
-            <i class="uil uil-times navCloseBtn"></i>
-            <li>
-              <a href="index.html" style="text-decoration: none">
-                <button
-                  class="button"
-                  style="
-                    margin-top: 10px;
-                    padding: 5px;
-                    width: 100px;
-                    border: 1px solid #ffffff;
-                    background: none;
-                    border-radius: 30px;
-                  "
-                >
-                  <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
-                </button>
-              </a>
-            </li>
-            <li>
-              <a href="games.html" style="text-decoration: none">
-                <button
-                  class="button"
-                  style="
-                    margin-top: 10px;
-                    padding: 5px;
-                    margin-left: -10px;
-                    width: 100px;
-                    background: none;
-                    border: 1px solid #ffffff;
-                    border-radius: 30px;
-                  "
-                >
-                  <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
-                </button></a
-              >
-            </li>
-            <li>
-              <a href="settings.html" style="text-decoration: none">
-                <button
-                  class="button"
-                  style="
-                    margin-top: 10px;
-                    padding: 5px;
-                    width: 100px;
-                    border: 1px solid #ffffff;
-                    background: none;
-                    margin-left: -10px;
-                    border-radius: 30px;
-                  "
-                >
-                  <i class="fa-solid fa-house"></i>Settings
-                </button></a
-              >
-              <a href="extra.html" style="text-decoration: none">
-                <button
-                  class="button"
-                  style="
-                    margin-top: 10px;
-                    padding: 5px;
-                    width: 100px;
-                    border: 1px solid #ffffff;
-                    margin-left: 5px;
-                    background: none;
-                    border-radius: 30px;
-                  "
-                >
-                  <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
-                </button></a
-              >
-              <a
-                id="pickLink"
-                href="#"
-                style="text-decoration: none"
-                title="Random game"
-              >
-                <button
-                  class="button"
-                  style="
-                    margin-top: -3px;
-                    padding: 5px;
-                    width: 50px;
-                    margin-left: 10px;
-                    border: 1px solid #ffffff;
-                    background: none;
-                    border-radius: 30px;
-                  "
-                >
-                  <i class="fa-solid fa-house" style="margin-right: 5px"></i>
-                  <span class="glyphicon glyphicon-random"></span>
-                </button>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>    <script src="assets/js/random.js"></script>
+            <button
+              class="button"
+              style="
+                margin-top: -3px;
+                padding: 5px;
+                width: 50px;
+                margin-left: 10px;
+                border: 1px solid #ffffff;
+                background: none;
+                border-radius: 30px;
+              "
+            >
+              <i class="fa-solid fa-house" style="margin-right: 5px"></i>
+              <span class="glyphicon glyphicon-random"></span>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>    <script src="assets/js/random.js"></script>
 
       <div><br/>
         <div class="background" style="
