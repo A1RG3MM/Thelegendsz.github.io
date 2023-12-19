@@ -90,6 +90,16 @@ iframe:-ms-fullscreen {
   bottom: 0; 
 }
 
+.uv-input-search {
+  background-color: #385cff;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 1cap;
+  padding: 12px;
+  width: auto;
+}
+
 #uv-error {
 text-align: center;
 }

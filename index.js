@@ -20,19 +20,21 @@ const error = document.getElementById("uv-error");
  */
 const errorCode = document.getElementById("uv-error-code");
 
+const errorDiv = document.getElementById("errorDiv");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   try {
     await registerSW();
   } catch (err) {
-    error.textContent = "[ERROR]: Failed to register service worker.";
+    errorDiv.removeAttribute("hidden");
+    errorCode.style.textAlign = "left"
+    error.textContent = "Oops! An error has occured. (See below for details)";
     errorCode.textContent = err.toString();
     throw err;
   }
   setTimeout(function() {
-    
+    error.textContent = "";
   }, 2000);
-error.textContent = "";
 
   const url = search(address.value, searchEngine.value);
   const encodedUrl = __uv$config.prefix + __uv$config.encodeUrl(url);
