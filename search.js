@@ -11,7 +11,7 @@ function search(input, template) {
     // eg: https://example.com, https://example.com/test?q=param
     return new URL(input).toString();
   } catch (err) {
-    // input was not a valid URL
+    console.log(err);
   }
 
   try {

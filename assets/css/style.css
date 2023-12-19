@@ -141,12 +141,7 @@ pre {
   background: #1c4589;
   color: #FFFFFF;
   padding: 10px;
-  transition: width 0.3s ease;
-
-}
-.searching:focus {
-  width: 250px; /* Adjust expanded width */
-  transition: width 0.3s ease;
+  width: 250px;
 }
 .play {
   background-color: #4a86e8;
@@ -154,7 +149,23 @@ pre {
   padding: 10px;
   margin: 20px 10px;
   width: 25%;
-  
+}
+
+#searchInput {
+  border: none;
+  color: #FFFFFF;
+  background: #4a85e8;
+  padding: 5px 10px;
+  border-radius: 3px;
+  height: 40px;
+  margin: 10px;
+  position: center;
+  bottom: -30px;
+  width: 250px;
+  transition: width 0.3s ease; /* Animation transition for width */
+}
+#searchInput:focus {
+  width: 500px;
 }
 
 
@@ -202,10 +213,6 @@ pre {
   margin: 10px;
   position: center;
   bottom: -30px;
-  width: 250px;
-  transition: width 0.3s ease; /* Animation transition for width */
-}
-.background > .searching:focus {
   width: 500px;
 }
 /* add keyframe animation for float  */
