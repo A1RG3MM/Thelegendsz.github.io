@@ -39,17 +39,10 @@ iframe:-ms-fullscreen {
 }
 #iframe {
   width: 100%;
-  height: calc(100vh - 55px);
+  height: 100px;
   border: none;
   position: absolute;
   bottom: 0; 
-}
-#swf-container {
-  width: 100%;
-  height: calc(100% - 55px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 embed {
   display: block;
