@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/uv/service/',
+    prefix: '/lessons/',
     bare: 'https://shuttle.notapr0xy.com.au/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,

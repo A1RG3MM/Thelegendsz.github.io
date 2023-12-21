@@ -1,23 +1,30 @@
-function updateClock() {
-    const now = new Date();
-    let hours = now.getHours();
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
+//CREDIT: smartfoloo ON DISCORD
 
-    // Convert hours to 12-hour format
-    if (hours > 12) {
-        hours -= 12;
-    }
+function showTime() {
+  var date = new Date();
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var s = date.getSeconds();
+  var session = "AM";
 
-    // Ensure that 12:00 is displayed correctly
-    if (hours === 0) {
-        hours = 12;
-    }
+  if (h == 0) {
+    h = 12;
+  }
 
-    const timeString = `${hours}:${minutes}:${seconds}`;
-    document.getElementById('time').textContent = timeString;
+  if (h > 12) {
+    h = h - 12;
+    session = "PM";
+  }
+
+  h = (h < 10) ? h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("time").innerText = time;
+  document.getElementById("time").textContent = time;
+
+  setTimeout(showTime, 1000);
+
 }
-
-// Update the clock immediately and then every second
-updateClock();
-setInterval(updateClock, 1000);
+showTime();
