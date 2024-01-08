@@ -29,6 +29,7 @@
           type="x-icon"
           href="https://cdn.glitch.global/85ca753d-6f1a-4860-8d72-3d3d1723d7d9/Untitled_design__4_-removebg-preview.png?v=1696785070775"
           />
+          <script src="https://kit.fontawesome.com/0e8a84fff9.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -46,11 +47,9 @@
       >
       </nav>
     <nav class="nav text-center">
-      <i class="uil uil-bars navOpenBtn"></i>
       <ul class="nav-links">
-        <i class="uil uil-times navCloseBtn"></i>
         <li>
-          <a href="../index.html" style="text-decoration: none">
+          <a href="../index.html" style="text-decoration: none" id="nav-index">
             <button
               class="button"
               style="
@@ -62,117 +61,54 @@
                 border-radius: 30px;
               "
             >
-              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Home
+              Home
             </button>
           </a>
         </li>
         <li>
-          <a href="../games.html" style="text-decoration: none">
+          <a href="../games.html" style="text-decoration: none"id="nav-games">
             <button
               class="button"
-              style="
-                margin-top: 10px;
-                padding: 5px;
-                margin-left: -10px;
-                width: 100px;
-                background: none;
-                border: 1px solid #ffffff;
-                border-radius: 30px;
-              "
             >
-              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Games
+              Games
             </button></a
           >
         </li>
         <li>
-            <a href="../apps.html" style="text-decoration: none">
+            <a href="../apps.html" style="text-decoration: none" id="nav-apps">
               <button
                 class="button"
-                style="
-                  margin-top: 10px;
-                  padding: 5px;
-                  margin-left: -10px;
-                  width: 100px;
-                  background: none;
-                  border: 1px solid #ffffff;
-                  border-radius: 30px;
-                "
               >
-                <i class="fa-solid fa-house" style="margin-right: 5px"></i>Apps
+                Apps
               </button></a
             >
-          </li>
+        </li>
         <li>
-          <a href="../proxy.html" style="text-decoration: none">
+          <a href="../proxy.html" style="text-decoration: none" id="nav-proxy">
             <button
               class="button"
-              style="
-                margin-top: 10px;
-                padding: 5px;
-                width: 100px;
-                border: 1px solid #ffffff;
-                margin-left: -10px;
-                background: none;
-                border-radius: 30px;
-              "
             >
-              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Proxy
+              Proxy
             </button></a
           >
-          <a href="../extra.html" style="text-decoration: none">
+        </li>
+        <li>
+          <a href="../extra.html" style="text-decoration: none" id="nav-extra">
             <button
               class="button"
-              style="
-                margin-top: 10px;
-                padding: 5px;
-                width: 100px;
-                border: 1px solid #ffffff;
-                margin-left: 5px;
-                background: none;
-                border-radius: 30px;
-              "
             >
-              <i class="fa-solid fa-house" style="margin-right: 5px"></i>Extra
+              Extra
             </button></a
           >
-          <a href="../settings.html" style="text-decoration: none">
+        </li>
+        <li>
+          <a href="../settings.html" style="text-decoration: none" id="nav-settings">
             <button
               class="button"
-              style="
-                margin-top: 10px;
-                padding: 5px;
-                width: 100px;
-                border: 1px solid #ffffff;
-                background: none;
-                margin-left: 7px;
-                border-radius: 30px;
-              "
             >
-              <i class="fa-solid fa-house"></i>Settings
+              Settings
             </button></a
           >
-          <a
-          id="pickLink"
-          href="#"
-          style="text-decoration: none"
-          title="Random game"
-        >
-          <button
-            class="button"
-            style="
-              margin-top: -3px;
-              padding: 5px;
-              width: 50px;
-              margin-left: 5px;
-              border: 1px solid #ffffff;
-              background: none;
-              border-radius: 30px;
-            "
-          >
-            <i class="fa-solid fa-house" style="margin-right: 5px"></i>
-            <span class="glyphicon glyphicon-random"></span>
-          </button>
-        </a>
         </li>
       </ul>
     </nav>
@@ -181,7 +117,7 @@
         <div style="align-items: center; margin-right: auto; margin-left: auto;">
             <p id="time" class="text-center" style="margin-top: 10%;"></p>
             <script src="../assets/js/timer.js"></script>
-          </div>
+        </div>
       </nav>
   </div>    <script src="../assets/js/random.js"></script>
   <!-------------
@@ -189,28 +125,33 @@
   --------------->
     <br /><br />.<br />.
     <div height="100%" class="text-center">
-      <iframe src="https://13gendszgamez.netlify.app/projects/slope/"
-              width="75%"
-              height="650px"
-              id="fullscreenIframe"
-              class="gameframe"
-        style="
-               border: 5px solid #FFFFFF;
-               border-radius: 30px;">
-      </iframe>
-      
-            <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-        * {
-          font-family: "Poppins", sans-serif;
-        }
-      </style>
+<div style="border: 5px solid #FFFFFF; width: 75%; margin-left: auto; margin-right: auto; border-radius: 30px;">
+<iframe src="https://13gendszgamez.netlify.app/projects/slope/"
+  width="100%"
+  height="650px"
+  id="fullscreenIframe"
+  class="gameframe"
+style="
+   border: none;
+   border-radius: 25px;
+   ">
+</iframe><br/>
+</div>
+<div class="background" style="margin-left: auto; margin-right: auto; margin-top: 1%; background-color: #3473d8; width: 75%; border: 4px solid #FFFFFF; border-radius: 15px; display: flex;">
+  <div style="margin-top: 15px; margin-left: 1%;">
+    <p id="detectGame">
+      Game: Slope
+    </p>
+  </div>
+  <div class="background" id="options">
+    <button onclick="openGame()" class="button" id="openBlank">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </button>
+    </div>
+</div>
 
       <center>
         <div class="background">
-          <button onclick="openGame()" class="button" style="width: 15%">
-            Play in about:blank
-          </button>
         </div>
                     <div style="height: 100%">‎ <br />‎ <br />‎ </div>
 

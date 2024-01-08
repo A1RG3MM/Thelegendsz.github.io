@@ -20,7 +20,10 @@ const error = document.getElementById("uv-error");
  */
 const errorCode = document.getElementById("uv-error-code");
 
+const discord = document.getElementById("discord");
+
 const errorDiv = document.getElementById("errorDiv");
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   try {

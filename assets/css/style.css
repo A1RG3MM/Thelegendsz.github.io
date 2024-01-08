@@ -90,6 +90,39 @@ iframe:-ms-fullscreen {
   bottom: 0; 
 }
 
+#options {
+  margin-left: 80%;
+}
+
+#options  #openBlank {
+  width: 100%;
+  margin-left: 70%;
+  height: auto;
+}
+
+#detectGame {
+  font-size: 15px;
+}
+@media screen and (max-width: 1575px) {
+  /* CSS styles applied for screens up to 50% of the viewport width */
+  #options > #openBlank {
+    width: 75%;
+    margin-left: 1%;
+    height: auto;
+  }
+}
+  @media screen and (max-width: 1100px) {
+    /* CSS styles applied for screens up to 50% of the viewport width */
+    #options > #openBlank {
+      width: 75%;
+    }
+    #detectGame {
+      font-size: 12px;
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+  }
+
 .uv-input-search {
   background-color: #385cff;
   text-align: center;
